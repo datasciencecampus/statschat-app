@@ -1,0 +1,30 @@
+[db]
+faiss_db_root = "db_lc"
+embedding_model = "sentence-transformers/all-mpnet-base-v2" # "sentence-transformers/paraphrase-MiniLM-L3-v2"
+
+[setup]
+directory = "data/bulletins"
+split_directory = "data/full_bulletins_split"
+split_length = 1000
+split_overlap = 50
+
+[search]
+model_name_or_path = "google/flan-t5-large" # "lmsys/fastchat-t5-3b-v1.0" "google/flan-t5-large" "google/flan-ul2"
+k_docs = 10
+k_contexts = 3
+similarity_threshold = 1.0     # Threshold score below which a document is returned in a search
+return_source_documents = false
+llm_summarize_temperature = 0.0
+llm_generate_temperature = 0.0
+
+[app]
+latest_max = 2    # Takes value int >= 0, commonly 0, 1 or 2
+
+[NYI]
+prompt_text = """Synthesize a comprehensive answer from the following text
+        for the given question. Provide a clear and concise response, that summarizes
+        the key points and information presented in the text. Your answer should be
+        in your own words and be no longer than 50 words. If the question cannot be
+        confidently answered from the information in the text, or if the question is
+        not related to the text, reply 'NA'. \n\n
+        Related text: {summaries} \n\n Question: {question} \n\n Answer:"""

@@ -1,0 +1,16 @@
+comment: true
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 80%
+        informational: true
+    patch:
+      default:
+        target: auto
+        threshold: 20%
+        informational: true
+
+ignore: ["tests"]

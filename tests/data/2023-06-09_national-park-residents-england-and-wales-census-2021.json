@@ -1,0 +1,156 @@
+{
+    "id": "2023-06-09_national-park-residents-england-and-wales-census-2021",
+    "title": "National park residents, England and Wales: Census 2021",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021",
+    "release_date": "2023-06-09",
+    "release_type": "bulletins",
+    "latest": true,
+    "url_keywords": [
+        "peoplepopulationandcommunity",
+        "populationandmigration",
+        "populationestimates"
+    ],
+    "contact_name": "Michael Roskams",
+    "contact_link": "mailto:census.customerservices@ons.gov.uk",
+    "content": [
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#main-points",
+            "section_header": "1. Main points",
+            "section_text": "Overall, 399,400 people lived in national parks in England and Wales in 2021 (0.67% of the usual resident population). The median age was higher in every national park than it was elsewhere in England and Wales, with the highest median age in the Broads (57 years). National park residents were more likely to identify with the \"White: British\" ethnic group and the \"Christian\" religion, and were more likely to speak English (English or Welsh in Wales) as a main language, than residents elsewhere in England and Wales. National park residents tended to have a higher level of education than residents elsewhere in England and Wales, and were also more likely to be retired. After standardising by age, national park residents tended to be in better health and were less likely to be disabled than residents elsewhere in England and Wales. Households in national parks were more likely to be in detached properties and to own their properties outright compared with other households in England and Wales.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#national-parks-in-england-and-wales",
+            "section_header": "2. National parks in England and Wales",
+            "section_text": "National parks are areas of land which, for reasons of environmental and cultural significance, are protected by the 1949 Act of Parliament. There are 10 national parks in England and three in Wales, which collectively cover over 16,000 square kilometres, or 10.97% of the land in England and Wales.The parks in England are:  The Broads Dartmoor Exmoor Lake District New Forest North York Moors Northumberland Peak District South Downs Yorkshire Dales The parks in Wales are:  Bannau Brycheiniog (previously referred to in English as the Brecon Beacons) Eryri (previously referred to in English as Snowdonia) Pembrokeshire Coast (referred to in Welsh as Arfordir Penfro) A further two national parks are located in Scotland (Cairngorms, and Loch Lomond and The Trossachs). Census 2022 data for Scottish national parks will be published by National Records of Scotland.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#population-and-households",
+            "section_header": "3. Population and households ",
+            "section_text": "Although national parks cover 10.97% of the area in England and Wales, only 0.67% of the usual resident population (399,400 people) lived within the boundaries of a national park on Census Day, 21 March 2021.In England, the South Downs was the national park with the most usual residents (113,300) and households (48,600). This was followed by the Lake District (39,000 residents, 17,800 households) and the Peak District (35,900 residents, 16,200 households). The least populated national parks were Northumberland (1,800 residents, 800 households) and the Broads (6,300 residents, 3,100 households).In Wales, the most populated national park was Bannau Brycheiniog (33,500 residents, 15,000 households) and the least populated was the Pembrokeshire Coast (20,900 residents, 9,800 households).The Pembrokeshire Coast also had the largest population decline since 2011 of all national parks in England and Wales, at 7.6% (from 22,600 usual residents in 2011). The next highest decline was in Northumberland, at 7.3% (from 2,000 in 2011). The largest increase was in Dartmoor, at 1.6% (from 33,600 in 2011 to 34,100 in 2021).Usual resident population, national parks in England and Wales, 2011 and 2021   The boundaries for two national parks were changed on 1 August 2016, such that the size of the Lake District increased by 73 square kilometres and the Yorkshire Dales increased by 417 square kilometres. As such, comparisons between 2011 and 2021 are not provided for these national parks. Population density was considerably lower in each national park than it was in England and Wales as a whole (395 people per square kilometre). The most densely populated national park was the South Downs (68.7 people per square kilometre), and the least densely populated were Northumberland (1.8 people per square kilometre), the Yorkshire Dales (10.4 people per square kilometre), and Eryri (11.6 people per square kilometre).",
+            "figures": [
+                {
+                    "figure_title": "Figure 1: The population declined in several national parks between 2011 and 2021",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig1/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#age",
+            "section_header": "4. Age",
+            "section_text": "National park residents tended to be older on average than the population elsewhere. The median age was higher in every national park (ranging from 49 years in the South Downs to 57 years in the Broads) than it was in other parts of England (39 years) and Wales (41 years).The Broads had the highest percentage of any national park of the population aged 65 years and over (36.7%) and 90 years and over (2.4%). Exmoor had the next highest percentage of the population aged 65 years and over (35.1%), whereas the New Forest had the next highest percentage of the population aged 90 years and over (2.1%).Of the national parks in Wales, the Pembrokeshire Coast had the highest median age (54 years), percentage of the population aged 65 years and over (33.1%), and percentage of the population aged 90 years and over (1.4%).Age structure of the population, 2021, national parks in England and Wales",
+            "figures": [
+                {
+                    "figure_title": "Figure 2: Residents of national parks tended to be older than those elsewhere",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig2/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#ethnicity-language-and-religion",
+            "section_header": "5. Ethnicity, language and religion",
+            "section_text": "When compared with the population in the rest of England and Wales, the population who lived in national parks tended to be:  less ethnically diverse more likely to speak English (English or Welsh in Wales) as a main language more likely to be Christian EthnicityFor ethnic group, the percentage of national park residents identifying as \"White: English, Welsh, Scottish, Northern Irish or British\" ranged from 90.7% in the South Downs to 96.7% in the North York Moors, which is higher than it is elsewhere in England (73.4%) and Wales (90.5%). Similarly, the percentage identifying with any \"White\" ethnic group was higher in all national parks (ranging from 95.8% in the South Downs to 98.6% in both Northumberland and the Yorkshire Dales) than it was in other parts of England (81.0%) and Wales (93.7%).Correspondingly, there were fewer people in ethnic minority groups in national parks than elsewhere. For example, the percentage who identified with an \"Asian\" ethnic group in national parks ranged from 0.4% (in Exmoor, Northumberland, North York Moors, and the Yorkshire Dales) to 1.9% (in Bannau Brycheiniog), which is considerably lower than elsewhere in England (9.7%) and Wales (2.9%). Similarly, the percentage identifying with a \"Black\" ethnic group was lower in all national parks (ranging from 0.1% in the Broads, North York Moors, the Pembrokeshire Coast, and Exmoor, to 0.5% in the South Downs) than it was elsewhere in England (4.2%) and Wales (0.9%).Ethnic group, 2021, national parks in England and Wales LanguageFor language, the percentage of national park residents whose main language is English (English or Welsh in Wales) ranged from 94.5% (in the Lake District) to 97.9% (in Northumberland), which was higher than it was elsewhere in England (87.8%) and Wales (93.8%).In Wales, people were also asked specifically about their Welsh language skills. The data for national parks show that the percentage of usual residents aged 3 years and over who could speak Welsh was considerably higher in Eryri (56.0%) than it was in non-national park areas of Wales (17.0%). The percentage was also higher in the Pembrokeshire Coast (19.0%), whereas fewer people spoke Welsh in Bannau Brycheiniog (12.7%).ReligionFinally, for religion, there tended to be more people who identified as \"Christian\" in national parks than elsewhere. The percentage of national park residents identifying as \"Christian\" ranged from 47.7% (in Dartmoor) to 60.3% (in the North York Moors), which is higher than other parts of England (46.3%) and Wales (43.4%).Correspondingly, there tended to be fewer non-Christian religious groups in national parks. For example, the percentage identifying as \"Muslim\" did not exceed 0.4% in any national park (0.4% identified as \"Muslim\" in the South Downs), which is considerably lower than in other parts of England (6.8%) and Wales (2.2%).However, this pattern did not hold for people who identified as \"Buddhist\". Several national parks, particularly Northumberland (0.9%), Bannau Brycheiniog (0.7%), and Dartmoor (0.7%), had higher proportions of residents identifying as \"Buddhist\" than other parts of England (0.5%) and Wales (0.3%).",
+            "figures": [
+                {
+                    "figure_title": "Figure 3: National parks tended to be less ethnically diverse than other areas",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig3/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#education",
+            "section_header": "6. Education",
+            "section_text": "National park residents tended to have a higher level of education than those living elsewhere in England and Wales.The national parks with the highest percentage of residents with a Level 4 qualification (a Bachelor's degree, Higher National Certificate, Higher National Diploma, or postgraduate qualifications) were the Peak District and the South Downs (both 36.6%) in England, and Bannau Brycheiniog (33.2%) in Wales. The percentage was higher in every national park than it was elsewhere in England (27.6%) and Wales (25.8%).Similarly, the percentage of national park residents with no qualifications tended to be lower than elsewhere. In Wales, all three national parks had lower percentages of people with no qualifications than the rest of the country (16.5%), with the lowest percentage in Eryri (13.9%). In England, only the Broads (16.3%) and Exmoor (14.8%) exceeded the percentage of people with no qualifications in other parts of England (14.7%).The percentage of usual residents with a Level 4 qualification, 2021, national parks in England and Wales",
+            "figures": [
+                {
+                    "figure_title": "Figure 4: The percentage with a Level 4 qualification was higher in every national park than it was elsewhere in England and Wales",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig4/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#labour-market-and-travel-to-work",
+            "section_header": "7. Labour market and travel to work ",
+            "section_text": "A higher proportion of national park residents aged 16 years and over were retired (ranging from 28.4% in the South Downs to 37.3% in the Broads) than in other parts of England (21.4%) and Wales (24.5%).Correspondingly, the percentage of the working-age population in national parks who were full-time employees was lower (ranging from 20.0% in Exmoor to 27.8% in Bannau Brycheiniog) than it was elsewhere in England (34.6%) and Wales (32.3%). The percentage who were unemployed was also lower in national parks (ranging from 1.2% in Northumberland to 2.4% in Eryri) than in other parts of England (3.5%) and Wales (3.1%). Economic activity status, 2021, national parks in England and Wales   Other than being retired, different reasons for being economically inactive include being a student, being long-term sick or disabled, or looking after home or family. National park residents were more likely to work mainly at or from home than those elsewhere. In England, the percentage of national park residents in employment who worked mainly at or from home ranged from 34.7% (in the North York Moors) to 48.5% (in Northumberland), which is higher than it was in other parts of the country (31.5%). Likewise, in Wales, the percentage working mainly at or from home was higher in Bannau Brycheiniog (34.2%), the Pembrokeshire Coast (33.8%), and Eryri (31.2%) than it was elsewhere in the country (25.4%).",
+            "figures": [
+                {
+                    "figure_title": "Figure 5: National park residents aged 16 years and over were more likely to be retired than those elsewhere",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig5/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#health-and-disability",
+            "section_header": "8. Health and disability",
+            "section_text": "Census 2021 data on health and disability use age-standardised proportions (ASPs). These allow for comparison between populations over time and across geographies, as they account for differences in population size and age structure. For further information on age standardisation, see Measuring the data.HealthNational park residents tended to be in better health than those elsewhere. The ASP of people who reported that they were in \"very good\" health was higher in every national park than it was elsewhere in England (47.5%) and Wales (46.5%). The highest proportions were in the New Forest (56.5%) and the Yorkshire Dales (55.2%) in England, and Eryri (53.3%) in Wales.Correspondingly, the ASP of people who reported being in \"very bad\" or \"bad\" health was lower in every national park than it was elsewhere in England (1.2% in \"very bad\" health, 4.1% in \"bad\" health) and Wales (1.6% in \"very bad\" health, 5.2% in \"bad health\"). The lowest proportions were in the Yorkshire Dales in England (0.5% in \"very bad\" health, 2.2% in \"bad\" health), and Eryri in Wales (0.8% in \"very bad\" health, 3.2% in \"bad\" health).Age-standardised general health, 2021, national parks in England and Wales DisabilityCensus 2021 also collected data on disability. In line with the Equality Act (2010), people who assessed their day-to-day activities as limited by long-term physical or mental health conditions or illnesses were considered disabled.In Wales, the ASP of the population who were disabled was lower in Eryri (16.1%), Bannau Brycheiniog (17.4%), and the Pembrokeshire Coast (17.5%) than it was elsewhere in the country (21.3%).In England, the results were more mixed. The ASP of the population who were disabled was lower in most national parks than it was elsewhere in England (at 17.7%), however, the Broads (17.9%) and Dartmoor (18.6%) had higher percentages.",
+            "figures": [
+                {
+                    "figure_title": "Figure 6: National park residents were typically in better health than those elsewhere ",
+                    "figure_subtitle": "Figure 6: National park residents were typically in better health than those elsewhere",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig6/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#housing",
+            "section_header": "9. Housing",
+            "section_text": "The percentage of households that were in detached properties was much higher in national parks (ranging from 39.3% in the Lake District to 67.7% in the New Forest) than elsewhere in England (22.8%) and Wales (28.0%). Far fewer households in national parks were in a purpose-built block of flats or tenement (ranging from 0.1% in Northumberland to 9.2% in the South Downs) than in other parts of England (17.1%) and Wales (9.5%).Households in national parks were also more likely to own their property outright (ranging from 41.9% in Northumberland to 54.3% in the New Forest) than those in other parts of England (32.4%) and Wales (37.7%).Properties in national parks tended to be larger than those elsewhere. In both England and Wales, each national park had a higher proportion of households with three or more bedrooms than other parts of England (61.0%) and Wales (68.5%). The highest proportion in England was in the New Forest (75.7%) and the highest proportion in Wales was in Bannau Brycheiniog (73.1%).However, households in national parks tended to have fewer people than those elsewhere. In non-national park areas, the percentage of households with three or more residents was 35.9% in England and 33.2% in Wales. Each national park had a lower percentage than this, with the lowest proportions in the Broads (21.1%) and Exmoor (22.2%) in England, and the Pembrokeshire Coast (25.2%) in Wales.As such, households in national parks were less likely to be overcrowded than those elsewhere. Every national park had a lower proportion of households with fewer bedrooms than required (lowest in the Yorkshire Dales, at 0.6%), and a higher proportion of households with more bedrooms than required (highest in Northumberland, at 89.1%), than other parts of England and Wales.   Occupancy rating provides a measure of whether a household\u2019s accommodation is overcrowded or under-occupied. An occupancy rating of negative 1 or less implies that a household has fewer bedrooms than the standard requirement, positive 1 implies that they have more bedrooms than required, and 0 implies that they met the standard required.",
+            "figures": [
+                {
+                    "figure_title": "Figure 7: Housing characteristics, 2021, national parks in England and Wales",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2253/fig7/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-national-park-residents-england-and-wales-data",
+            "section_header": "10. National park residents, England and Wales: data",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-glossary",
+            "section_header": "11. Glossary",
+            "section_text": "AgeA person's age on Census Day, 21 March 2021 in England and Wales. Infants aged under 1 year are classified as 0 years of age.DisabilityPeople who assessed their day-to-day activities as limited by long-term physical or mental health conditions or illnesses are considered disabled. This definition of a disabled person meets the harmonised standard for measuring disability and is in line with the Equality Act (2010).Ethnic groupThe ethnic group that the person completing the census feels they belong to. This could be based on their culture, family background, identity or physical appearance.Respondents could choose 1 out of 19 tick-box response categories, including write-in response options.General healthA person's assessment of the general state of their health from \"very good\" to \"very bad\". This assessment is not based on a person's health over any specified period of time.Highest qualificationThe highest level of qualification is derived from the question asking people to indicate all qualifications held, or their nearest equivalent.This may include foreign qualifications where they were matched to the closest UK equivalent.HouseholdA household is defined as:  one person living alone, or a group of people (not necessarily related) living at the same address who share cooking facilities and share a living room or sitting room, or dining area This includes:  all sheltered accommodation units in an establishment (irrespective of whether there are other communal facilities), and all people living in caravans on any type of site that is their usual residence; this will include anyone who has no other usual residence elsewhere in the UK a household must contain at least one person whose place of usual residence is at the address; a group of short-term residents living together is not classified as a household, and neither is a group of people at an address where only visitors are staying Main languageA person's first or preferred language.National parkAn area in the countryside that is protected for their landscape. Each national park is managed by its own national park authority.ReligionThe religion people connect or identify with (their religious affiliation), whether or not they practise or have belief in it.This question was voluntary, and the variable includes people who answered the question, including \"No religion\", alongside those who chose not to answer this question.This variable classifies responses into the eight tick-box response options. Write-in responses are classified by their \"parent\" religious affiliation, including \"No religion\", where applicable.Usual residentA usual resident is anyone who on Census Day, 21 March 2021 was in the UK and had stayed or intended to stay in the UK for a period of 12 months or more, or had a permanent UK address and was outside the UK and intended to be outside the UK for less than 12 months.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-measuring-the-data",
+            "section_header": "12. Measuring the data",
+            "section_text": "Reference dateThe census provides estimates of the characteristics of all people and households in England and Wales on Census Day, 21 March 2021. It is carried out every 10 years and gives us the most accurate estimate of all the people and households in England and Wales.We are responsible for carrying out the census in England and Wales but will also release outputs for the UK in partnership with the Welsh Government, the National Records of Scotland (NRS) and the Northern Ireland Statistics and Research Agency (NISRA). The census in Northern Ireland was also conducted on 21 March 2021, whereas Scotland's census was moved to 20 March 2022. All UK census offices are working closely together to understand how this difference in reference dates will affect UK-wide population and housing statistics, in terms of both timing and scope.Response rateThe person response rate is the number of usual residents for whom individual details were provided on a returned questionnaire, divided by the estimated usual resident population.The person response rate for Census 2021 was 97% of the usual resident population of England and Wales, and over 88% in all local authorities. Most returns (89%) were received online. The response rate exceeded our target of 94% overall and 80% in all local authorities.Read more about question-specific response rates at local authority level in Section 4 of our measures showing the quality of Census 2021 estimates.Age-standardised proportionsData on general health and disability have been standardised by age. Age-standardised proportions (ASPs) allow for fairer comparison between populations over time and across geographies, as they account for differences in the population size and age structure. The 2013 European Standard Population is used to standardise proportions.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-strengths-and-limitations",
+            "section_header": "13. Strengths and limitations",
+            "section_text": "Labour market and travel to work quality informationCensus 2021 was conducted during the coronavirus (COVID-19) pandemic, a period of unparalleled and rapid change. It is possible that this affected the way some people responded to labour market questions on the census. Estimates from the census will also differ to those collected on the Labour Force Survey, because of a range of conceptual differences between the two sources. See our Comparing Census 2021 and Labour Force Survey estimates of the labour market, England and Wales: 13 March 2023 article for further information about interpreting census labour market data.GeneralQuality considerations, along with the strengths and limitations of Census 2021 more generally, can be found in the Quality and Methodology Information (QMI) for Census 2021. Read more about specific quality considerations in our Labour market quality information for Census 2021 methodology.Further information on our quality assurance processes is provided in our Maximising the quality of Census 2021 population estimates report.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-related-links",
+            "section_header": "14. Related links",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/nationalparkresidentsenglandandwales/census2021#1-cite-this-statistical-bulletin",
+            "section_header": "15. Cite this statistical bulletin",
+            "section_text": "",
+            "figures": []
+        }
+    ]
+}

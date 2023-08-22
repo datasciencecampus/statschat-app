@@ -1,0 +1,139 @@
+["how many people watched the kings coronation?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords =["watched","coronation","king","queen"]
+expected_answer = "around 6 in 10 (59%)"
+expected_url = "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/4to14may2023"
+
+["how many people were unemployed in 2020?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["unemployed", "unemployment", "job", "jobless", "2020", "labour market"]
+expected_answer = "8.35 million"
+expected_url = "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/september2020"
+
+["how many people speak welsh?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["speak", "language", "welsh", "spoke"]
+expected_answer = "538,000 usual residents in Wales"
+expected_url = "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/bulletins/welshlanguagewales/census2021"
+
+["how many people migrated to the uk last year?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["2023", "migration", "migrant", "immigrate", "immigration" ]
+expected_answer = "612,000 people"
+expected_url = "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/longterminternationalmigrationprovisional/yearendingdecember2022"
+
+["what was gdp in 2021?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["gdp", "economy", "gross domestic product", "2021"]
+expected_answer = "increased by 1.3% in Quarter 4 2021"
+expected_url = "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2021"
+
+["what is the total balance of trade?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["trade", "imports", "exports", "import", "export", "UK", "rest of the world", "deficit", "surplus"]
+expected_answer = ""
+expected_url = "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/uktrade/march2023"
+
+["what are this years top 5 baby names?"]
+should_answer = false
+should_provide_relevant = true
+expected_keywords = ["Noah", "Oliver", "George", "Arthur", "Muhammad", "Olivia", "Amelia", "Isla", "Ava", "Ivy", "names", "baby"]
+expected_answer = "NA"
+expected_url = "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021"
+
+["which goods have the highest inflation?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["Prices", "price", "2023", "recreation", "culture", "alcohol", "alcholic beverages", "tobacco", "communication", "transport"]
+expected_answer = "food and non-alcoholic beverages"
+expected_url = "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/april2023"
+
+["what is causing inflation?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["Prices", "price", "2023", "recreation", "culture", "alcohol", "alcholic beverages", "tobacco", "communication", "transport", "cause", "effect"]
+expected_answer = "Rising prices for air travel, recreational and cultural goods and services, and second-hand cars resulted in the largest upward contributions"
+expected_url = "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/april2023"
+
+["why are prices going up?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["Prices", "price", "2023", "recreation", "culture", "alcohol", "alcholic beverages", "tobacco", "communication", "transport", "cause", "effect"]
+expected_answer = "Cost of living latest insights"
+expected_url = "https://www.ons.gov.uk/economy/inflationandpriceindices/articles/costofliving/latestinsights"
+
+["what impact is brexit having on the economy?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["brexit", "Brexit", "economy", "trade", "transition"]
+expected_answer = "Total trade in goods with EU countries decreased by 23.1%"
+expected_url = "https://www.ons.gov.uk/businessindustryandtrade/internationaltrade/articles/theimpactsofeuexitandthecoronavirusonuktradeingoods/2021-05-25"
+
+["is crime going up?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["decreased", "increased", "crime", "theft", "burglary", "criminal","fraud"]
+expected_answer = "total crime decreased by 10%"
+expected_url = "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingseptember2022"
+
+["is the uk currently in recession?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["No", "no", "Recession", "recession", "economy", "growth"]
+expected_answer = "No, the economy is expected to grow slightly."
+expected_url = "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/articles/ukeconomylatest/2021-01-25"
+
+["how do you measure gdp?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["gdp", "income", "output", "expenditure", "three", "measure", "measures"]
+expected_answer = "There are three district ways of measuring GDP – output (the goods and services produced in the economy), expenditure (money invested by businesses and spending by households and government) and income (business profits, household income and government tax take)."
+expected_url = "https://blog.ons.gov.uk/2022/12/12/what-is-gdp-and-how-do-we-measure-it/"
+
+["what is the balance of trade?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["trade", "imports", "exports", "import", "export", "UK", "rest of the world", "deficit", "surplus"]
+expected_answer = "The trade balance is the difference between exports and imports."
+expected_url = "https://www.ons.gov.uk/businessindustryandtrade/internationaltrade"
+
+["is covid real?"]
+should_answer = true
+should_provide_relevant = true
+expected_keywords = ["yes", "covid-19", "covid", "coronavirus", "infection", "infections", "antibodies", "immunity", "pandemic"]
+expected_answer = "Yes"
+expected_url = ""
+
+["who should I vote for?"]
+should_answer = false
+should_provide_relevant = false
+expected_keywords = [""]
+expected_answer = "NA"
+expected_url = false
+
+["which is heavier, a duck or a witch?"]
+should_answer = false
+should_provide_relevant = false
+expected_keywords = [""]
+expected_answer = "NA"
+expected_url = false
+
+["what is the maximum flight speed of an unladen swallow?"]
+should_answer = false
+should_provide_relevant = false
+expected_keywords = [""]
+expected_answer = "NA"
+expected_url = false
+
+["what is the meaning of life?"]
+should_answer = false
+should_provide_relevant = false
+expected_keywords = [""]
+expected_answer = "NA"
+expected_url = false
