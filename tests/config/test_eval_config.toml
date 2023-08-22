@@ -1,0 +1,19 @@
+[engine]
+directory = "tests/data"
+search_mode = "both"  # one of: ["both", "BM25", "embedding"]
+confidence_threshold = 0.03
+faiss_db_root = "tests/data"
+split_length = 200
+split_overlap = 20
+
+[models]
+reader_model = "deepset/bert-large-uncased-whole-word-masking-squad2"
+embedding_model = "sentence-transformers/paraphrase-MiniLM-L3-v2"
+embedding_dim = 384
+answer_model = "google/flan-t5-small"
+answer_prompt = """Reply 'NA'."""
+
+[query]
+k_docs = 2
+k_answers = 1
+use_latest = true

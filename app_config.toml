@@ -1,0 +1,25 @@
+[engine]
+directory = "data/bulletins"
+search_mode = "both"  # one of: ["both", "BM25", "embedding"]
+confidence_threshold = 0.03
+faiss_db_root = "data/db_haystack"
+split_length = 200
+split_overlap = 20
+
+[models]
+reader_model = "deepset/bert-large-uncased-whole-word-masking-squad2"
+embedding_model = "sentence-transformers/multi-qa-mpnet-base-dot-v1" # "sentence-transformers/paraphrase-MiniLM-L3-v2"
+embedding_dim = 768 # 384
+answer_model =  "google/flan-t5-large" # "lmsys/fastchat-t5-3b-v1.0" "google/flan-t5-large" "google/flan-ul2"
+answer_prompt = """Synthesize a comprehensive answer from the following text
+        for the given question. Provide a clear and concise response, that summarizes
+        the key points and information presented in the text. Your answer should be
+        in your own words and be no longer than 50 words. If the question cannot be
+        confidently answered from the information in the text, or if the question is
+        not related to the text, reply 'NA'. \n\n
+        Related text: {join(documents)} \n\n Question: {query} \n\n Answer:"""
+
+[query]
+k_docs = 10
+k_answers = 10
+use_latest = true
