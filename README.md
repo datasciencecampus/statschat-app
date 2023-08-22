@@ -84,9 +84,9 @@ the preprocessing and app can be run as a small example system without waiting
 on webscraping.
 
 ### To webscrape the source documents from ONS
-#### By default we have limited the script to retrieving 10 actual articles (`statschat/webscraping/main.py`, line 61), this limit is easily edited out to allow the program to run to completion.
+#### We have removed this script, and for the sake of demonstration included some example scrape results so that the process can be continued from the next step below
 ```shell
-python statschat/webscraping/main.py
+# python statschat/webscraping/main.py
 ```
 
 ### To create a local document store
