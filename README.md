@@ -2,7 +2,6 @@
 
 # `StatsChat`
 [![Stability](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#experimental)
-[![codecov](https://codecov.io/gh/datasciencecampus/Statschat/branch/haystack-legacy/graph/badge.svg?token=QALqIC7CDX)](https://codecov.io/gh/datasciencecampus/Statschat)
 [![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40DataSciCampus&style=social&url=https%3A%2F%2Ftwitter.com%2FDataSciCampus)](https://twitter.com/DataSciCampus)
 [![Shared under the MIT License](https://img.shields.io/badge/license-MIT-green)](https://github.com/datasciencecampus/Statschat/blob/haystack-legacy/LICENSE)
 [![Mac-OS compatible](https://shields.io/badge/MacOS--9cf?logo=Apple&style=social)]()
