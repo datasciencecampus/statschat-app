@@ -1,0 +1,1 @@
+{"faiss_config_path": "tests/data/faiss_config.json", "sql_url": "sqlite:///tests/data/faiss_db.db", "faiss_index_factory_str": "Flat", "embedding_dim": 384}

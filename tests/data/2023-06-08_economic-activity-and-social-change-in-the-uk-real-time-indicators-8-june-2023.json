@@ -1,0 +1,129 @@
+{
+    "id": "2023-06-08_economic-activity-and-social-change-in-the-uk-real-time-indicators-8-june-2023",
+    "title": "Economic activity and social change in the UK, real-time indicators: 8 June 2023",
+    "url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023",
+    "release_date": "2023-06-08",
+    "release_type": "bulletins",
+    "latest": false,
+    "url_keywords": [
+        "economy",
+        "economicoutputandproductivity",
+        "output"
+    ],
+    "contact_name": "Tom Williams",
+    "contact_link": "mailto:realtime.indicators@ons.gov.uk",
+    "content": [
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#main-points",
+            "section_header": "1. Main points",
+            "section_text": "Consumer behaviour indicators showed a mixed picture this week, credit and debit card spending increased on the week, automotive fuel spending was broadly unchanged, and transactions in most Pret A Manger stores decreased when compared with the previous week (Revolut, Bank of England CHAPS data, Visa, Pret A Manger). Section 3: Consumer behaviour. When asked in May 2023, 68% of businesses reported they had some form of concern for June 2023, down from the 71% reported for May 2023, and the lowest percentage reported this year; those that reported energy prices as their main concern fell from 18% for May 2023 to 15% for June 2023 and inflation of goods and services prices fell from 16% to 15% (final results from Wave 83 of the Business Insights and Conditions Survey). Nearly two-thirds (63%) of businesses were not experiencing worker shortages in late May 2023; 13% reported they did have shortages and the remainder selected not sure or not applicable, this is stable with late April 2023 (final results from Wave 83 of the Business Insights and Conditions Survey). The total number of online job adverts increased slightly by 1% on 2 June 2023 compared with the previous week, but was 12% below the level seen in the equivalent period of 2022; 22 of the 28 job categories and 11 of the 12 UK countries and English regions saw a decrease from the previous year (Adzuna). Section 4: Business and workforce. The System Price of electricity rose by 10% when compared with the previous week but was 84% lower than the peak level seen in mid-December 2022 (Elexon). Section 5: Energy and housing. In the week to 4 June 2023, the average number of UK flights were 1% higher than the previous week and 5% higher than the equivalent period of last year (EUROCONTROL). Section 6: Transport.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#latest-indicators-at-a-glance",
+            "section_header": "2. Latest indicators at a glance",
+            "section_text": "Notes:  Revolut adjustments to user count are at an aggregate level and as such age bands may not adjust evenly. Users should note that card spending over time is pushed upwards by the impacts of both inflation on value of transactions and cash-to-card conversion. Users should note that because of the 2 June 2022 bank holiday, the Aggregate UK spending on debit and credit cards (estimated from CHAPS payments) comparison with the equivalent period last year has been changed to compare data from 1 June 2022.",
+            "figures": [
+                {
+                    "figure_title": "dashboard",
+                    "figure_subtitle": "",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2613/dashboard/index.html",
+                    "figure_type": "interactive"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#consumer-behaviour",
+            "section_header": "3. Consumer behaviour",
+            "section_text": "In the latest week, consumer behaviour activity is likely to have been affected by the spring bank holiday on 29 May 2023 and the school half term period across parts of the UK. Additionally, please note that the equivalent week of 2022 contained the spring and Platinum Jubilee bank holidays (2 and 3 June 2022), which will affect comparisons with this period.UK Spending on debit and credit cards, daily CHAPS-based indicatorThese data series are experimental real-time indicators for estimating UK spending on credit and debit cards. They track the daily CHAPS payments made by credit and debit card payment processors to around 100 major UK retail corporates. These payments are the proceeds of recent credit and debit card transactions made by customers at their stores, both through physical and online platforms.\u202fMore information on the indicator is provided in the accompanying\u202f Guide to the Bank of England's UK spending on credit and debit cards experimental data series.Companies are allocated to one of the following four categories based on their primary business: \u202f  \"staples\" refers to companies that sell essential goods that households need to purchase, such as food and utilities \"work-related\" refers to companies providing public transport or selling petrol \"delayable\" refers to companies selling goods whose purchase could be delayed, such as clothing or furnishings \"social\" refers to spending on travel and eating out   Figure 1 shows changes in the value of CHAPS payments received by large UK corporates from their credit and debit card processors, \"merchant acquirers\".\u202fThe spending categories recorded the following changes in the latest week:  \"staple\" increased by 10 points \"work-related\" increased by 4 points \"social\" increased by 4 points \"delayable\" increased by 3 points When compared with the equivalent week in 2022, the spending categories recorded the following changes:  \"staple\" increased by 10 points \"work-related\" was unchanged \"social\" decreased by 1 point \"delayable\" decreased by 1 point Users should note that because of the bank holiday on 2 June 2022, comparisons with the equivalent period last year for aggregate UK spending on debit and credit cards (estimated from CHAPS payments) are using data from 1 June 2022. Our\u202faccompanying UK spending on credit and debit cards dataset\u202fis available.Monthly CHAPS based indicatorThe monthly data time series is available in our accompanying UK spending on credit and debit cards dataset and includes methodological notes that users should bear in mind. The monthly CHAPS index is calculated by the Office for National Statistics (ONS), rather than being an additional series that is produced and validated by the Bank of England.The monthly CHAPS-based indicator of aggregate credit and debit card spending in May 2023 was 3 percentage points higher than in April 2023. All spending categories except the \"staple\" category increased in May 2023 when compared with the previous month, with the largest increase in the \"delayable\" category, which increased by 6 percentage points. \"Staple\" spending decreased by 1 percentage point when compared with April 2023.In May 2023, the monthly indicator was 2 percentage points higher than the previous year. \"Staple\" saw the largest increase of 12 percentage points when compared with May 2022, and \"work-related\" spending also increased by 2 percentage points in the same timeframe. Both \"delayable\" and \"social\" spending decreased when compared with May 2022, by 3 and 2 percentage points, respectively.The monthly CHAPS-based aggregate index can provide an indication of the direction of retail sales data, having followed similar trends since the CHAPS index was established in January 2020. The ONS publishes retail sales data around the middle of each month, approximately two weeks after the monthly CHAPS index is published in this bulletin.  Revolut spending on debit cardsIn the week to 4 June 2023, Revolut debit card spending increased by 6 percentage points compared with the previous week, and was 15 percentage points higher than the equivalent period last year.For the second week in a row, all six categories saw increases in debit card spending when compared with the previous week. The biggest increases were in the \"entertainment\" and \"retail\" categories, increasing by 13 and 7 percentage points, respectively.Four of the six categories increased compared with the equivalent period last year, with \"retail\" showing the largest year-on-year increase of 32 percentage points. The only category to be below the equivalent level of 2022 was \"pubs, restaurants and fast food\", which was down by 8 percentage points. Our accompanying Revolut spending on debit cards dataset is available.National retail footfallNational retail footfall figures are supplied by Springboard, a provider of data on customer activity. The breakdowns in this indicator are as follows:  overall footfall, which is the sum of the average footfall in each destination type weighted by their respective footfall volumes shopping centre, which is a space that does not form part of the public highway, and is owned and managed by a single landlord high street, which is the central part of the main business and commercial area of a town retail parks and shopping parks, which comprise retail warehouse units, wholly owned and managed by a single landlord Springboard's weekly data are defined over a seven-day period running from Monday to Sunday. Week 22 of 2023 refers to the period Monday 29 May 2023 to Sunday 4 June 2023. All quoted figures have been rounded to the nearest integer.Volume of daily retail footfall, percentage compared with the equivalent week of 2019, 1 January 2020 to 4 June 2023, UK Download the dataOverall, retail footfall increased in the week to 4 June 2023 to 102% of the level of the previous week. This is likely because of the bank holiday on Monday 29 May 2023. Overall retail footfall was also at 103% of the level in the equivalent week of 2022. Footfall increased in shopping centres and retail parks to 106% and 102% of the level of the previous week, respectively. High street footfall fell slightly to 99% of the previous week.Compared with the equivalent week of 2019, retail park footfall was the only location category to see increased activity, at 103%. Shopping centres and high streets were at 91% and 95% of the equivalent week of 2019, respectively.Of the 12 English regions and UK countries, overall retail footfall increased in eight, decreased in three, and was unchanged in one (West Midlands) compared with the previous week. The largest increases occurred in Northern Ireland and the South West, which were both at 107% compared with the previous week. The largest decreases were seen in the North East and London, which were both at 98% of the level of the previous week.Transactions at Pret A MangerIn the week to 1 June 2023, the number of in-store transactions at Pret A Manger stores decreased in all but two location categories when compared with the previous week, coinciding with rail strikes and the school half term period across parts of the UK. The largest decrease was in Manchester stores, where transactions fell by 29 percentage points, followed by London city worker and regional stations where they fell by 24 and 19 percentage points, respectively. The only two categories that saw increases in transactions were London airports and Yorkshire stores, which increased by 3 and 2 percentage points, respectively.Transactions at Pret A Manger stores increased in eight and decreased in two store location categories when compared with the equivalent period of 2022, which contained the spring bank holiday. The largest increases were in London airports and Manchester stores, at 24 and 21 percentage points, respectively. The two categories that decreased were regional stations and London stations stores, which fell by 10 and 8 percentage points, respectively. Our accompanying Transactions at Pret A Manger dataset is available.Automotive fuel spendingIn the week to 28 May 2023, the estimated demand for fuel per transaction was broadly unchanged from the level in the previous week and was 21 percentage points above the level seen in the equivalent week of 2022.Average fuel prices continue to trend downwards, falling by 2 percentage points compared with the previous week, and are now 65 percentage points below the peak seen in July 2022.Average road fuel sales in the week to 28 May 2023 were 101% of the level seen in the equivalent week of 2022. Our accompanying Automotive fuel spending dataset is available.",
+            "figures": [
+                {
+                    "figure_title": "3",
+                    "figure_subtitle": "Figure 3: Overall retail footfall was 96% of the level of the equivalent week of 2019, the highest level this comparison has been in 2023 so far",
+                    "figure_url": "https://www.ons.gov.uk/visualisations/dvc2613/footfall/index.html",
+                    "figure_type": "interactive"
+                },
+                {
+                    "figure_title": "Figure 1: In the week to 1 June 2023, the aggregate CHAPS-based indicator of credit and debit card purchases increased by 5 points from the previous week",
+                    "figure_subtitle": "A backward looking seven-day rolling average, 13 January 2020 to 1 June 2023, non-seasonally adjusted, nominal prices",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023/88fd49ac&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                },
+                {
+                    "figure_title": "Figure 2: Retail sales data follow a similar trend to the CHAPS index of aggregate credit and debit card spending",
+                    "figure_subtitle": "Monthly average, non-seasonally adjusted, nominal prices and retail sales values, January 2020 to May 2023",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023/5a962c88&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#business-and-workforce",
+            "section_header": "4. Business and workforce",
+            "section_text": "Online job advertsThese figures are experimental estimates of online job adverts provided by Adzuna, an online job search engine, by category and by UK country and English region. The number of job adverts over time is an indicator of the demand for labour. The Adzuna categories used do not correspond to Standard Industrial Classification (SIC) categories, so these values are not directly comparable with our Vacancy Survey.   The total number of online job adverts increased slightly on 2 June 2023 compared with the previous week. There were increases in 16 of the 28 online job categories, decreases in seven, and five remained unchanged in the latest week. The \"charity or voluntary\" category saw the largest week-on-week increase, rising by 32%, while the \"legal\" category fell the most, decreasing by 8%.The total number of online job adverts was 12% lower than the level seen in the equivalent period of 2022, with 22 of the 28 online job categories below their levels of a year ago. The largest decrease relative to the equivalent period of 2022 continues to be in the \"human resources (HR) and recruitment\" category, which has fallen by 45%.All the UK countries and English regions experienced a decrease compared with the equivalent period last year, except for Scotland, which increased by 6%. The East Midlands saw the largest decrease at 25%, followed by London, which was 22% lower than the equivalent period last year. Our accompanying Online job advert estimates dataset is available.Advanced notification of potential redundanciesCalculated as a rolling four-week average, the number of potential redundancies reported in the week to 28 May 2023 was 22% above the level in the equivalent week of 2022. The number of employers proposing redundancies was 31% above the level in the equivalent week of 2022.Comparisons with the equivalent period a year ago help account for any seasonal impacts. Our accompanying Advanced notification of potential redundancies dataset is available.",
+            "figures": [
+                {
+                    "figure_title": "Figure 4: The total number of online job adverts on 2 June 2023 increased slightly by 1% compared with the previous week",
+                    "figure_subtitle": "Volume of online job adverts, index: 100 = February 2020 average, 7 February 2018 to 2 June 2023, non-seasonally adjusted, UK",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023/6ed449fd&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#energy-and-housing",
+            "section_header": "5. Energy and housing",
+            "section_text": "System Price of electricityThe System Price of electricity, made available by Elexon, is used to settle the difference between contracted generation or consumption of electricity, and actual generation or consumption, in each half-hour trading period in the Balancing Market. The Balancing Market is the mechanism used to balance supply and demand in Great Britain's electricity market.Companies are contracted to generate or consume a certain amount of electricity within each half hour (known as the Settlement Period). However, this may differ from the actual amount generated or consumed. Where companies have generated more or less than the amount of energy their customers consume, this difference is balanced by the UK's National Grid Transmission System, which buys or sells enough electricity to reconcile the difference. The System Price is designed to reflect the cost incurred by National Grid in doing this.More information about how prices are calculated is available on the Elexon website.We have taken a daily average of the half-hourly system prices and averaged them again over the preceding seven days to bring out the trends and smooth volatility.  In the week to 4 June 2023, the System Price of electricity increased by 10% compared with the previous week and was 55% below the level in the equivalent week of 2022. This price is 84% lower than the peak level seen in mid-December 2022. Our accompanying System Price of electricity dataset is available.",
+            "figures": [
+                {
+                    "figure_title": "Figure 5: The preceding seven-day rolling average of the System Price of electricity in the week to 4 June 2023 was 55% lower than the equivalent week of 2022",
+                    "figure_subtitle": "System Price of electricity, pound per megawatt hour, preceding seven-day rolling average, 5 January 2020 to 4 June 2023, Great Britain, non-seasonally adjusted",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023/a57617e2&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#transport",
+            "section_header": "6. Transport",
+            "section_text": "Daily UK flightsIn the week to 4 June 2023, the average number of UK flights increased by 1% when compared with the previous week, and was 5% higher than the equivalent period last year. The average number of UK flights was, however, 11% lower than the equivalent week of 2019. Our accompanying Daily UK flights dataset is available.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#data",
+            "section_header": "7. Data",
+            "section_text": "This section lists a selection of the data available in this publication. For the full list of available datasets, please see our accompanying dataset page.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#glossary",
+            "section_header": "8. Glossary",
+            "section_text": "Real-time indicatorA real-time indicator provides insights into economic activity using close-to-real-time big data, administrative data sources, rapid response surveys or Experimental Statistics, which represent useful economic and social concepts.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#measuring-the-data",
+            "section_header": "9. Measuring the data",
+            "section_text": "Information on the methodology used to produce the indicators in this bulletin is available in our Economic activity and social change in the UK, real-time indicators methodology.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#1-strengths-and-limitations",
+            "section_header": "10. Strengths and limitations",
+            "section_text": "These statistics have been produced to provide timely indicators of the effect of developing world events on the UK economy and society, using close-to-real-time big data, administrative data sources, rapid response surveys, or Experimental Statistics.The data presented in this bulletin are reviewed and refreshed on a regular basis. Indicators are swapped in and out of the publication based on their suitability and availability.UK coronavirus (COVID-19) restrictionsCoronavirus restrictions should be considered when interpreting the data featured throughout this bulletin.SeasonalitySeasonal fluctuations are likely to be present in many of these indicators so caution must be applied when interpreting changes in series that are not seasonally adjusted.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#1-related-links",
+            "section_header": "11. Related links",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/8june2023#1-cite-this-statistical-bulletin",
+            "section_header": "12. Cite this statistical bulletin",
+            "section_text": "",
+            "figures": []
+        }
+    ]
+}

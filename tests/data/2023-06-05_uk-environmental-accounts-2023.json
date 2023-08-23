@@ -1,0 +1,116 @@
+{
+    "id": "2023-06-05_uk-environmental-accounts-2023",
+    "title": "UK Environmental Accounts: 2023",
+    "url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023",
+    "release_date": "2023-06-05",
+    "release_type": "bulletins",
+    "latest": true,
+    "url_keywords": [
+        "economy",
+        "environmentalaccounts"
+    ],
+    "contact_name": "Chukwudi Egbumokei, Alexandra Christenson and Sophie Barrand",
+    "contact_link": "mailto:environment.accounts@ons.gov.uk ",
+    "content": [
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#main-points",
+            "section_header": "1. Main points",
+            "section_text": "UK greenhouse gas (GHG) emissions on a residence basis increased by 3% to just over 502 million tonnes of carbon dioxide equivalent (Mt Co2e) between 2020 and 2021. The impact of the coronavirus (COVID-19) pandemic on emissions would likely have been weaker than in 2020 because of fewer UK pandemic restrictions in 2021. Consumer expenditure is still the largest single UK emissions contributor, at 26% of the 2021 total; the energy sector was second highest at 17%. Energy from renewable sources accounted for 13% of total UK energy use in 2021, decreasing slightly from 14% in 2020. Output from the UK environmental goods and services sector (EGSS) was estimated to be \u00a389.6 billion in 2020, up 1.4% from 2019. Employment in the UK EGSS was estimated to be 398,800 full-time equivalent employees in 2020, up 2.2% from 2019.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#greenhouse-gas-emissions",
+            "section_header": "2. Greenhouse gas emissions",
+            "section_text": "Total UK greenhouse gas (GHG) emissions (residence basis) in 2021 were just over 502 million tonnes of carbon dioxide equivalent (Mt Co2e). Information about the different method used to measure emissions can be found in the Measuring UK greenhouse gas emissions article, available on the UK climate change statistics Portal.The transport sector\u2019s emissions reduced by 9% in 2021 following a 28% fall in 2020; the largest decrease (34%) of all sectors since 2019. Emissions from households, accounted for through consumer expenditure, are the largest single contributor to UK emissions. In 2021, emissions related to consumer expenditure \u2013 primarily from heating homes and travelling \u2013 rose 7% to 135 Mt Co2e in 2021, 26% of the total. The second highest emitter was the energy sector, rising 7% to reach 86 Mt Co2e, 17% of the total.",
+            "figures": [
+                {
+                    "figure_title": "Figure 1: Households remain the highest contributors to overall UK greenhouse gas emissions in 2021",
+                    "figure_subtitle": "Trend for greenhouse gas emissions for the three highest-emitting industries and households in 1990 to 2021 (residence basis)",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023/f39abd25&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#greenhouse-gas-emission-intensity",
+            "section_header": "3. Greenhouse gas emission intensity",
+            "section_text": "A reduction in overall UK greenhouse gas (GHG) emission intensity would, in theory, indicate that the UK is moving towards a lower carbon economy. In 2021, the UK emitted 0.19 thousand tonnes of Co2e per \u00a3 million of gross value added (GVA). This is a drop of 67% since 1990.Agriculture, forestry and fishing was by far the most emission intensive industry in 2021 after surpassing electricity, gas, steam and air conditioning supply in 2016. This is likely a combination of the agriculture industry being the heaviest emitter of the potent GHG CH4 (Methane) and the reduction in emission intensity from the electricity industry.",
+            "figures": [
+                {
+                    "figure_title": "Figure 2: Agriculture sectors remain the highest contributors to overall UK emissions Intensity in 2021",
+                    "figure_subtitle": "Trend for greenhouse gas intensity for the four highest-emitting industries in 1990 to 2021 (residence basis)",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023/c8fb479a&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#energy-use",
+            "section_header": "4. Energy use",
+            "section_text": "Most greenhouse gas emissions are related to energy use. The UK used a total of almost 176 million tonnes of oil equivalent (Mtoe) of energy in 2021, with 80% coming from fossil fuels.In 2021, energy from renewable sources accounted for 13% of all energy use in the UK, compared with 0.9% in 1990. Energy use from fossil fuels has been falling for the energy and manufacturing sectors, largely because of a switch from the use of coal to other fuels, such as natural gas, which generate lower emissions.",
+            "figures": [
+                {
+                    "figure_title": "Figure 3: The four sectors that contribute the most air emissions also use the most energy from fossil fuels",
+                    "figure_subtitle": "Fossil fuel energy share for the three highest-emitting industries, and households, UK 1990 to 2021 (residence basis)",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023/a5f8ac47&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#environmental-goods-and-service-sector",
+            "section_header": "5. Environmental goods and service sector",
+            "section_text": "Our environmental goods and services sector (EGSS) statistics measure 17 activities across the economy that produce goods and services for environmental protection and resource management purposes.The framework follows the UN System of Environmental-Economic Accounting (SEEA). For more detail see our Environmental accounts on the environmental goods and services sector (EGSS) QMI.OutputOutput from the UK EGSS was an estimated \u00a389.6 billion in 2020, up 1.4% from 2019. This is because output for the production of renewable energy in 2020 increased by \u00a34.2 billion. Without this, UK EGSS output would have fallen 4.3% in 2020. Overall, output has now increased in each year since 2010.  EmploymentThe UK EGSS was estimated to have 398,800 full-time equivalent (FTE) employees in 2020, up 2.2% from 2019.Despite waste being the largest EGSS activity by FTE, the 2020 increase from 2019 is largely because of increased employment in recycling (35.8%), and production of renewable energy (36.3%). Excluding these activities would have led to an overall fall of 1.4% in UK EGSS employment in 2020  EGSS estimates are also available by Standard Industrial Classification (SIC), allowing comparisons between EGSS and emissions on a residence basis. Between 2010 and 2020, EGSS employment increased by 14%, while emissions fell by 28%. Emissions for the energy sector fell by 55%, while the sector\u2019s EGSS employment increased by nearly 500% from 3,600 FTE in 2010 to 21,500 FTE in 2020.Emissions for the manufacturing industry fell by 17%, while its EGSS employment increased by 9%. This may reflect reduced manufacturing sector emissions being caused by changes in fuel used and production process improvements. The EGSS definition means that some high-emitting sectors have no EGSS employment, while other sectors have EGSS employment that do not relate to reducing emissions.",
+            "figures": [
+                {
+                    "figure_title": "Figure 4: Production of renewable energy is now the EGSS activity with the largest output",
+                    "figure_subtitle": "UK, 2010 to 2020",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023/d6d5cdb0&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                },
+                {
+                    "figure_title": "Figure 5: Waste is the largest contributing activity to EGSS employment",
+                    "figure_subtitle": "Employment, full-time equivalent, UK, 2010 to 2020",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023/854f1c02&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#environmental-accounts-data",
+            "section_header": "6. Environmental accounts data",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#glossary",
+            "section_header": "7. Glossary",
+            "section_text": "Greenhouse gasesThe following greenhouse gases (GHG) included in the atmospheric emissions accounts are those covered by the Kyoto Protocol:   carbon dioxide (CO2) methane (CH4) nitrous oxide (N2O) hydrofluorocarbons (HFCs) perfluorocarbons (PFCs) sulphur hexafluoride (SF6) nitrogen trifluoride (NF3) These gases contribute directly to global warming and climate change because of their positive radiative forcing effect. The potential of each GHG to cause global warming is assessed in relation to a given weight of CO2, so all GHG emissions are measured as carbon dioxide equivalents (CO2e).Residence basisEstimates compiled on a residence basis include data relating to UK residents and UK-registered businesses, regardless of whether they are in the UK or overseas. Data relating to foreign visitors and foreign businesses in the UK are excluded.Territory basisEstimates of GHG emissions are compiled on a territory basis and include emissions within UK borders. UK air emissions statistics on a territory basis are published by the Department for Energy Security and Net-Zero, formerly the Department for Business, Energy and Industrial Strategy.Environmental goods and services sectorThe environmental goods and services sector accounts, which follow the UN System of Environmental-Economic Accounting (SEEA), measure areas of the economy engaged in producing goods and services for environmental protection purposes. It also includes areas of the economy engaged in conserving and maintaining natural resources.Environmental protection expenditureThe environmental protection expenditure accounts, which follow SEEA guidance, estimate how much is spent on activities that have the prevention, reduction and elimination of pollution and any other degradation of the environment as their main purpose.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#measuring-the-data",
+            "section_header": "8. Measuring the data",
+            "section_text": "The UK Environmental Accounts are \"satellite accounts\" to the main UK National Accounts and are compiled in accordance with the System of Environmental Economic Accounting (SEEA), which closely follows the UN System of National Accounts (SNA).Air emissions and energy useThe air and energy accounts in the UK Environmental Accounts are compiled by Ricardo Energy and Environment on behalf of the Office for National Statistics (ONS).The main source of information for this reporting is the National Atmospheric Emissions Inventory (NAEI). These data sources provide air emissions data, calculated from activity data and emission factors, for all relevant sources in the UK as a starting point for generating the air emissions accounts. The residence principle is then applied to these datasets, thereby apportioning the emissions to an industrial classification based on Standard Industrial Classification: SIC 2007.Global warming potential (GWP) is an emission metric used to quantify the contributions of different greenhouse gases (GHG) to climate change. Our estimates are reported with a GWP of AR5, aligned with the latest Greenhouse Gas Protocol recommendation. The AR5 reporting standard comes from the Fifth Assessment Report from the United Nations Intergovernmental Panel on Climate Change (IPCC). It summarises the latest scientific knowledge on climate change, including the latest information on GHG and their impact on the environment.More quality and methodology information on strengths, limitations, appropriate uses, and how the data were created is available in our Environmental accounts on air emissions QMI.Environmental goods and services sectorThese data are from a wide range of sources; major sources include:  supply and use tables the Low Carbon and Renewable Energy Economy Survey the Annual Business Survey the Business Register and Employment Survey Sources are used in different ways to compile estimates of output, gross value added (GVA), employment, and exports for 17 activities.Further information is available in our Environmental accounts on the environmental goods and services sector (EGSS) QMI and our UK environmental goods and services sector (EGSS) methodology annex.Environmental protection expenditureThe environmental protection expenditure (EPE) accounts are produced as part of the environmental accounts and provide estimates for the UK's environmental protection expenditure, output and use by general government, businesses, and households.The main data sources for the EPE accounts are supply and use tables, the Annual Business Survey, the EPE survey, and the European System of Accounts, Table 11 (general government annual expenditure). Estimates of the EPE accounts cover general government, households and businesses. Estimates from the EPE survey are also published by the ONS and are available in our Environmental protection expenditure: industry dataset.Further information is available in our Environmental protection expenditure (EPE) survey QMI and our Environmental protection expenditure (EPE) accounts QMI.QualityMore quality and methodology information on strengths, limitations, appropriate uses, and how these data were created is available in the environmental accounts pages of the ONS website.Data are subject to revisions; more information is available in our Revisions policies. The ONS data used in this bulletin may therefore differ from previous publications. For example, EGSS estimates use Supply and Use data that have incorporated methodology improvements for Blue Book 2022. These have resulted in revisions across the whole of our data series, back to 2010. Further information on these improvements can be found in our Impact of Blue Book 2022 changes on current price and volume estimates of gross domestic product article.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#strengths-and-limitations",
+            "section_header": "9. Strengths and limitations",
+            "section_text": "Environmental goods and services sectorOur latest environmental charities data use an improved approach to estimation. Where data were previously based on modelling from historical Office for National Statistics (ONS) public sector data, we now incorporate information from the Charities Commission combined with updated ONS Public Sector data. This activity is revised back to 2012 for employment data and to 2015 for output and gross value added (GVA) data.Following last year's environmental goods and services sector release, errors were identified in the dataset across numerous estimates and activities. A correction has since been made to the dataset and corresponding bulletin. For details, see our UK environmental goods and services sector (EGSS): 2019 bulletin.For information on the strengths and limitations of air emissions and energy accounts, environmental goods and services sector, and environmental protection expenditure, see Section 8: Strengths and limitations in our UK Environmental Accounts: 2022 bulletin.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#1-related-links",
+            "section_header": "10. Related links",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/economy/environmentalaccounts/bulletins/ukenvironmentalaccounts/2023#1-cite-this-statistical-bulletin",
+            "section_header": "11. Cite this statistical bulletin",
+            "section_text": "",
+            "figures": []
+        }
+    ]
+}
