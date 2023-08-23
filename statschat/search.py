@@ -268,7 +268,7 @@ class BasicSearcher:
                 prediction["answers"][i].context
                 for i in range(min(2, n_answers))
                 if prediction["answers"][i].score
-                >= 0.8 * prediction["answers"][0].score
+                >= max(0.8 * prediction["answers"][0].score, self.confidence_threshold)
             ]
             summary = self.summarizer.query_texts(query=question, texts=context)
 
@@ -279,8 +279,7 @@ class BasicSearcher:
                 [
                     prep_response(prediction["answers"][i])
                     for i in range(n_answers)
-                    # if prediction["answers"][i].score
-                    # >= 0.8 * prediction["answers"][0].score
+                    if prediction["answers"][i].score >= self.confidence_threshold
                 ]
             ),
         }
