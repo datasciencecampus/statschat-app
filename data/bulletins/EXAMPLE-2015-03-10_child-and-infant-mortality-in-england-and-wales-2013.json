@@ -1,0 +1,152 @@
+{
+    "id": "2015-03-10_child-and-infant-mortality-in-england-and-wales-2013",
+    "title": "Child and infant mortality in England and Wales: 2013",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10",
+    "release_date": "2015-03-10",
+    "release_type": "bulletins",
+    "latest": false,
+    "url_keywords": [
+        "peoplepopulationandcommunity",
+        "birthsdeathsandmarriages",
+        "deaths"
+    ],
+    "contact_name": "Elizabeth McLaren",
+    "contact_link": "mailto:vsob@ons.gov.uk",
+    "content": [
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#main-points",
+            "section_header": "1. Main points",
+            "section_text": "There were 2,686 infant deaths (deaths under 1 year) in England and Wales in 2013, compared with 2,912 infant deaths in 2012 and 6,381 in 1983 In 2013, the infant mortality rate was 3.8 deaths per 1,000 live births, the lowest ever recorded in England and Wales. This compares with an infant mortality rate of 4.0 deaths per 1,000 live births in 2012 and 10.1 deaths per 1,000 live births in 1983 Infant mortality rates were lowest for babies of mothers aged 25 to 29 years (3.4 deaths per 1,000 live births) and highest for babies of mothers aged under 20 years (6.1 deaths per 1,000 live births) In 2013, the infant mortality rates for very low birthweight babies (under 1,500 grams) and low birthweight babies (under 2,500 grams) were 164.0 and 32.4 deaths per 1,000 live births respectively",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#summary",
+            "section_header": "2. Summary",
+            "section_text": "This bulletin presents final statistics on infant deaths and childhood deaths that occurred in England and Wales in 2013. It also contains additional analyses by some of the key risk factors affecting infant deaths, including age of mother and birthweight. These characteristics are derived from linking the death registration to the corresponding birth registration record. Data are also available for babies born in 2012 who died before their first birthday: the 2012 birth cohort for infant deaths.This is the first time that we have published 2013 figures on infant and childhood mortality, based on occurrences. It is also the first time that the 2012 birth cohort data for infant deaths have been published.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#background",
+            "section_header": "3. Background",
+            "section_text": "Although infant mortality rates have continued to fall in England and Wales over the past 30 years, the rates of change varied over the period. The change in the first half of the period was more than twice that in the second half. General improvements in healthcare and more specific improvements in midwifery and neonatal intensive care can partly explain the overall fall in the rate of change (National Children\u2019s Bureau, 2014).Despite the downward trend, evidence in the Marmot Review: Fair Society, Healthy Lives noted that factors, including births outside marriage, maternal age under the age of 20 and deprivation, were independently associated with an increased risk of infant mortality. The review went on to say that \u2018low birthweight in particular is associated with poorer long-term health outcomes and the evidence also suggests that maternal health is related to socio-economic status\u2019.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#infant-and-perinatal-mortality-rates",
+            "section_header": "4. Infant and perinatal mortality rates",
+            "section_text": "There were 2,686 infant deaths in England and Wales in 2013, resulting in an infant mortality rate of 3.8 deaths per 1,000 live births (the lowest rate ever recorded in England and Wales). Since 1983, when the rate was 10.1 deaths per 1,000 live births, there has been a 62% fall in infant mortality rates in England and Wales. This continues the overall decline in infant mortality rates in England and Wales over the past 30 years (Figure 1). The infant mortality rate in 2012 was 4.0 deaths per 1,000 live births.  Over the same period, there has been a similar fall in neonatal mortality rates (deaths under 28 days) and postneonatal mortality rates (deaths between 28 days and 1 year). The neonatal mortality rate fell by 54%, from 5.9 deaths per 1,000 live births in 1983, to 2.7 deaths per 1,000 live births in 2013. The postneonatal mortality rate fell by 72% over the same period, from 4.3 deaths per 1,000 live births in 1983, to 1.2 deaths per 1,000 live births in 2013.In 2013, there were 3,284 stillbirths and 1,423 deaths at age under 7 days, resulting in a perinatal mortality rate of 6.7 deaths per 1,000 total births. Since 1983, when the perinatal mortality rate was 10.4 deaths per 1,000 total births, the rate has fallen by more than a third.",
+            "figures": [
+                {
+                    "figure_title": "Figure 1: Infant, neonatal and postneonatal mortality rates, 1983 to 2013",
+                    "figure_subtitle": "England and Wales",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10/86444f44&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#linking-birth-and-death-records",
+            "section_header": "5. Linking birth and death records",
+            "section_text": "Linking birth and infant death records improves our understanding of the key characteristics of the baby\u2019s parents that were registered on the birth registration record (background note 4). In 2013, 98% of infant deaths in England and Wales were successfully linked to their corresponding birth registration record. The linkage rate for infant deaths has remained consistent since the linking exercise began.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#cause-of-infant-deaths",
+            "section_header": "6. Cause of infant deaths",
+            "section_text": "The broad ONS cause groups showed that immaturity-related conditions, for example, respiratory and cardiovascular disorders, were the most common cause of infant deaths in 2013, with 44% due to these causes. Immaturity-related conditions accounted for 14% of all postneonatal deaths and 57% of all neonatal deaths. Congenital anomalies were another major cause group, accounting for 28% of all infant deaths. Congenital anomalies accounted for 32% of all postneonatal deaths and 27% of all neonatal deaths.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#age-of-mother-at-birth",
+            "section_header": "7. Age of mother at birth",
+            "section_text": "The infant mortality rate for all infant deaths linked to their corresponding birth registration record was 3.8 deaths per 1,000 live births in 2013. For these linked deaths, infant mortality rates were lowest for babies of mothers aged 25 to 29 years (3.4 deaths per 1,000 live births) and highest for mothers aged under 20 years (6.1 deaths per 1,000 live births).",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#birthweight",
+            "section_header": "8. Birthweight",
+            "section_text": "Low birthweight, one of the known risk factors for infant deaths, can be caused by a number of factors. For example, smoking has been identified as a major risk factor contributing to low birthweight. Babies born to women who smoke weigh, on average, 200g less than babies born to non-smokers (NHS, Why should I stop smoking if I\u2019m pregnant?).  In 2013, the infant mortality rates for very low birthweight babies (under 1,500 grams) and low birthweight babies (under 2,500 grams) were 164.0 and 32.4 deaths per 1,000 live births respectively. This is much higher than the rate of 1.3 deaths per 1,000 live births among babies of normal birthweight (over 2,500 grams).For babies of low birthweight, the infant mortality rate was highest among mothers aged under 20 years (44.8 deaths per 1,000 live births) and lowest among mothers aged 40 and over (28.9 deaths per 1,000 live births) (Figure 2).",
+            "figures": [
+                {
+                    "figure_title": "Figure 2: Infant and neonatal mortality rates for low birthweight babies: by age of mother, 2013",
+                    "figure_subtitle": "England and Wales",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10/864f732a&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#socio-economic-status",
+            "section_header": "9. Socio-economic status",
+            "section_text": "Significant differences in infant mortality rates by socio-economic group persist in England and Wales (Oakley et. al. 2009 (720.5 Kb Pdf)). One measure of social circumstances is that of occupational status. This information is collected at birth. Infant mortality rates were highest for the National Statistics Socio-economic Classification (NS-SEC) groups describing routine and manual occupations (Groups 5 to 7) with 4.5 deaths per 1,000 live births (the three-class version of NS-SEC has been used, there is more information in background note 9). In contrast there were 2.8 deaths per 1,000 live births for higher managerial, administrative and professional occupations (Groups 1.1, 1.2 and 2) and 3.6 deaths per 1,000 live births for intermediate occupations (Groups 3 and 4). For the 2012 data year onwards, the way that socio-economic status is reported has changed; details can be found in background note 8.Similar patterns in perinatal mortality by socio-economic group were recorded, with mortality rates highest for the NS-SEC groups describing routine and manual occupations (7.8 deaths per 1,000 total births). Higher managerial, administrative and professional occupations had a perinatal mortality rate of 5.5 deaths per 1,000 total births while for intermediate occupations the rate was 6.6. These variations may be the result of the link between lower socio-economic status and poorer maternal health, which can ultimately affect infant mortality rates (Oakley et. al. 2009 (720.5 Kb Pdf)).",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#1-mothers-country-of-birth",
+            "section_header": "10. Mother\u2019s country of birth",
+            "section_text": "The infant mortality rate for babies of mothers born outside the UK was 4.2 deaths per 1,000 live births compared with 3.6 deaths per 1,000 live births for mothers born inside the UK. The highest infant mortality rates were for babies of mothers born in the Caribbean (9.0 deaths per 1,000 live births) and mothers born in Central Africa (8.3 deaths per 1,000 live births) (please note this rate has been calculated from fewer than 20 deaths and its reliability as a measure maybe affected by the small number of events). Babies of mothers born in the Caribbean also had the highest stillbirth rate (8.3 deaths per 1,000 total births). Differences in infant mortality rates by mother\u2019s country of birth are likely to reflect underlying factors including mother\u2019s age, together with a range of other socio-demographic characteristics mentioned earlier in this bulletin.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#1-child-mortality-rates",
+            "section_header": "11. Child mortality rates",
+            "section_text": "Between 1983 and 2013, the age-specific mortality rate for children aged 1 to 14 years fell by 66%, from 29 deaths per 100,000 population in 1983 to 10 deaths per 100,000 in 2013. The age-specific mortality rate for children aged 1 to 4 years also fell by 66% over the same period, from 44 deaths per 100,000 population in 1983 to 15 deaths per 100,000 in 2013. Over the past 30 years child death rates from respiratory and circulatory diseases in England and Wales have been falling, as they have for the whole population, reflecting advances in medical care and preventative measures generally. In 2013, congenital related conditions and cancers were the most common form of death for children aged under 16 years.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#1-birth-cohort-for-infant-deaths-2012",
+            "section_header": "12. Birth cohort for infant deaths 2012",
+            "section_text": "Singleton and multiple births using the 2012 birth cohort tablesOf the 729,674 live births in 2012, a total of 2,939 infants had died before their first birthday, resulting in an infant mortality rate of 4.0 deaths per 1,000 live births. There were 3,558 stillbirths and 1,577 deaths at age under seven days over the same time period, resulting in a perinatal mortality rate of 7.0 deaths per 1,000 total births (live births and stillbirths).The infant mortality rate for multiple births in the 2012 birth cohort was nearly five times higher than for singletons (17.7 deaths per 1,000 live births compared with 3.6 deaths per 1,000 live births). This was most marked in the first 28 days of life (neonatal deaths) when the mortality rate for multiple births was nearly six times higher than for singletons (13.8 deaths per 1,000 live births compared with 2.4 deaths per 1,000 live births). For those who survived beyond their first month but died before their first birthday (postneonatal deaths), the mortality rate was over three times higher for multiple births (3.9 per 1,000 live births) compared with singleton births (1.1 deaths per 1,000 live births) (Figure 3).  On average multiple births tend to have lower birthweights than singletons, which is one reason why the infant mortality rate is around five times higher for multiple births than for singleton births. Just over half of multiple birth babies (56% of those with a known birthweight) were low birthweight (less than 2,500 grams) and 8.9% of those with a known birthweight were very low birthweight (less than 1,500 grams) (Figure 4). Multiple pregnancies are also associated with a higher risk of stillbirth, death under 28 days and child disability (Human Fertilisation and Embryology Authority (HFEA)).  In contrast, 5.4% of singletons were born with a low birthweight and 0.9% were very low birthweight. The main reason why multiple birth babies tend to have lower birthweight than singleton babies is because multiple births rarely go to term.The highest infant mortality rates were for the extremely low birthweight babies (less than 1,000 grams). For singletons the rate was 316.3 deaths per 1,000 live births and for multiples the rate was 331.5 deaths per 1,000 live births.Although most multiple births occur naturally, many occur as a result of fertility treatment. On average, 1 in 5 of In Vitro Fertilisation (IVF) pregnancies result in multiple births compared with 1 in 80 for women who conceive naturally (HFEA). With approximately 17,800 IVF babies born in the UK in 2012, this contributes considerably to the multiple birth rate (HFEA, 2014). In 2009, the Human Fertilisation and Embryology Authority launched the elective single embryo transfer (eSET) policy, which allowed centres to develop their own eSET strategy, with the aim to reduce the UK IVF multiple pregnancy rate to 10% over a period of years (HFEA).Age of mother at birth using the 2012 birth cohort tablesNearly two-thirds (64%) of all multiple births in 2012 were to women aged 30 years or over compared with 49% of all singleton births. The 2012 birth cohort tables for infant deaths show that mothers aged under 20 years have the highest infant mortality rate for singletons (5.9 deaths per 1,000 live births). Younger mothers (under 20 years) also have the highest infant mortality rate for multiple births (36.1 deaths per 1,000 live births).Marital status and registration type using the 2012 birth cohort tablesThe infant mortality rate for babies born inside marriage was lower than for those born outside marriage. The 2012 birth cohort for infant deaths shows that for singletons, there were 3.1 deaths per 1,000 live births inside marriage and 4.1 deaths per 1,000 live births outside marriage. For multiple births there were 15.2 deaths per 1,000 live births inside marriage and 21.2 deaths per 1,000 live births outside marriage.The infant mortality rate for singletons was highest for those registered solely by their mother, or registered jointly by parents living at different addresses (5.9 and 4.9 deaths per 1,000 live births respectively). For multiple births the infant mortality rate was highest for those jointly registered by both parents living at different addresses (25.3 deaths per 1,000 live births) compared with 21.7 deaths per 1,000 live births for those jointly registered by parents living at the same address. The very small numbers in these groups affects the robustness of estimated mortality rates. Differences in mortality rates by marital status and birth registration type will also reflect complex underlying factors including mother\u2019s age and social circumstances (Messer, 2011). For married women the infant mortality rate for singleton births was higher for women who have previously had three or more children (4.7 deaths per 1,000 live births) compared with women who have had no previous children (3.5 deaths per 1,000 live births). Other factors may be relevant here, especially the mother\u2019s age. For multiple births, the infant mortality rate was higher for women who have previously had two children (16.4 deaths per 1,000 live births).Socio-economic status using the 2012 birth cohort tablesThe 2012 birth cohort tables for infant deaths show that for singleton births, the highest infant mortality rate was for the NS-SEC groups describing routine and manual occupations (Groups 5 to 7) with 4.2 deaths per 1,000 live births (the three-class version of NS-SEC has been used, background note 9 has more detail). In contrast there were 2.6 deaths per 1,000 live births for higher managerial, administrative and professional occupations (Groups 1.1, 1.2 and 2) and 3.5 deaths per 1,000 live births for intermediate occupations (Groups 3 and 4). The same pattern was found for multiple births where there were smaller numbers, although the infant mortality rate for each group was between five and six times higher than for singletons. For the 2011 data year onwards, the way in which socio-economic status is reported has changed; details can be found in background note 8.Studies have shown that infant mortality rates are comparatively higher for low income families (Duncan and Brooks-Gunn, 2000). Mothers from routine and manual occupation are less likely to breastfeed (NICE, 2008) which can result in poorer immunity and poorer digestive health for the baby.",
+            "figures": [
+                {
+                    "figure_title": "Figure 3: Infant, neonatal and postneonatal mortality rates for singleton and multiple births, babies born in 2012",
+                    "figure_subtitle": "England and Wales",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10/39550c02&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                },
+                {
+                    "figure_title": "Figure 4: Live births: birthweight (grams) for singleton and multiple births, babies born in 2012",
+                    "figure_subtitle": "England and Wales",
+                    "figure_url": "https://www.ons.gov.uk/chartimage?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10/046cb1c7&width=&hideSource=true",
+                    "figure_type": "chartbuilder_image"
+                }
+            ]
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#1-users-and-uses-of-infant-mortality-statistics",
+            "section_header": "13. Users and uses of infant mortality statistics",
+            "section_text": "Infant mortality is seen as a key measure among health outcomes and there is a long established link between social and health inequalities, and infant mortality. The Department of Health (DH) is a key user of child mortality statistics. Infant mortality continues to take a central role in DH\u2019s work on tackling health inequalities within the NHS Outcomes Framework 2014/15 and the Public Health Outcomes Framework.There are also two specific users of the birth cohort data; the Department of Midwifery and Child Health, City University London; and Public Health England, who provide information and intelligence to improve decision making for policy makers, commissioners, managers, regulators, and other health stakeholders working on children's, and maternal health, for example by providing service snapshots for infant mortality and stillbirths for local areas. Other users of infant mortality data include academics, independent researchers, charities and media.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#1-changes-to-child-mortality-outputs",
+            "section_header": "14. Changes to child mortality outputs",
+            "section_text": "Changes to child mortality publications were outlined in an information note, available on our website. These changes are being implemented.",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#15further-information",
+            "section_header": "\n15\n.Further information\n",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#16references",
+            "section_header": "\n16\n.References\n",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#17background-notes",
+            "section_header": "\n17\n.Background notes\n",
+            "section_text": "",
+            "figures": []
+        },
+        {
+            "section_url": "https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/childhoodinfantandperinatalmortalityinenglandandwales/2015-03-10#18methodology",
+            "section_header": "\n18\n.\nMethodology\n",
+            "section_text": "",
+            "figures": []
+        }
+    ]
+}
