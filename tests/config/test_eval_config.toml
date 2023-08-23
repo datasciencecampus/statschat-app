@@ -1,7 +1,7 @@
 [engine]
 directory = "tests/data"
 search_mode = "both"  # one of: ["both", "BM25", "embedding"]
-confidence_threshold = 0.03
+confidence_threshold = 0.0003
 faiss_db_root = "tests/data"
 split_length = 200
 split_overlap = 20
