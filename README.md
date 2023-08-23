@@ -103,7 +103,8 @@ The API default url would be http://localhost:5000/api. See [API endpoint docume
 
 ### Alternatively, to run the search evaluation pipeline
 
-The StatsChat pipeline is currently evaluated based on small number of test question. The main 'app_config.toml' determines pipeline setting used in evaluation and results are written to `data/model_evaluation` folder.
+The StatsChat pipeline is currently evaluated based on small number of test question. The main 'app_config.toml' determines pipeline setting used in evaluation and results are written to `data/model_evaluation` folder.  The evaluation script requires that project root (assumed working directory) be added to PYTHONPATH, this is handled through [direnv](https://direnv.net/) and
+the `.envrc` file.
 
 ```shell
 python statschat/model_evaluation/evaluation.py
