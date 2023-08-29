@@ -2,6 +2,8 @@ pytest==6.2.5
 pytest-pythonpath==0.7.4
 pandas==2.0.2
 Flask==2.3.2
+Flask-SocketIO==5.3.4
+simple-websocket==0.10.1
 ipykernel==6.23.2
 pre-commit==3.3.3
 bs4==0.0.1

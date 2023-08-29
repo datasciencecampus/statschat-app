@@ -153,20 +153,23 @@ class Inquirer:
         top_matches = [
             Document(page_content=text["page_content"], metadata={"source": "NA"})
             for text in top_matches[: self.k_contexts]
+            if text["score"] <= 1.5 * top_matches[0]["score"]
         ]
+        if top_matches:
+            self.logger.info(f"Passing top {len(top_matches)} results for QA")
 
-        self.logger.info(f"Passing top {len(top_matches)} results for QA")
+            # stuff all above documents to the model
+            chain = load_qa_chain(
+                self.llm_generate, chain_type="stuff", prompt=generate_prompt
+            )
 
-        # stuff all above documents to the model
-        chain = load_qa_chain(
-            self.llm_generate, chain_type="stuff", prompt=generate_prompt
-        )
-
-        # parameter values
-        response = chain(
-            {"input_documents": top_matches, "question": query},
-            return_only_outputs=True,
-        )
+            # parameter values
+            response = chain(
+                {"input_documents": top_matches, "question": query},
+                return_only_outputs=True,
+            )
+        else:
+            response = {"output_text": "NA"}
 
         return response["output_text"]
 

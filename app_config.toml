@@ -1,5 +1,5 @@
 [db]
-faiss_db_root = "db_lc"
+faiss_db_root = "data/db_langchain"
 embedding_model = "sentence-transformers/all-mpnet-base-v2" # "sentence-transformers/paraphrase-MiniLM-L3-v2"
 
 [setup]
