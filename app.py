@@ -1,13 +1,12 @@
 import toml
 import logging
 
-import pandas as pd
-
 from datetime import datetime
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, session
 from flask.logging import default_handler
 from markupsafe import escape
 from werkzeug.datastructures import MultiDict
+from flask_socketio import SocketIO
 
 from statschat.llm import Inquirer
 from statschat.utils import deduplicator
@@ -31,18 +30,11 @@ logging.basicConfig(
 logger.addHandler(default_handler)
 
 
-# define global variable to link last answer to ratings for feedback capture
-last_answer = {}
-feedback_file = f"data/feedback/{SESSION_NAME}.csv"
-pd.DataFrame(
-    {"question": [], "answer": [], "confidence": [], "timing": [], "feedback": []}
-).to_csv(feedback_file, index=False)
-
 # initiate Statschat AI and start the app
 searcher = Inquirer(**CONFIG["db"], **CONFIG["search"], logger=logger)
 
 
-def make_query(question: str, latest_max: bool = True) -> dict:
+def make_query(question: str, latest: int = 1) -> list:
     """
     Utility, wraps code for querying the search engine, and then the summarizer.
     Also handles storing the last answer made for feedback purposes.
@@ -53,9 +45,8 @@ def make_query(question: str, latest_max: bool = True) -> dict:
             Defaults to True.
 
     Returns:
-        dict: answer and supporting documents returned.
+        list: supporting documents returned.
     """
-    now = datetime.now()
     # TODO: pass the advanced filters to the searcher
     # TODO: move deduplication keys to config['app']
     docs = deduplicator(
@@ -63,45 +54,30 @@ def make_query(question: str, latest_max: bool = True) -> dict:
         keys=["section", "title", "date"],
     )
     if len(docs) > 0:
-        if latest_max:
+        if latest:
             for doc in docs:
                 # Divided by decay term because similarity scores are inverted
                 # Original score is L2 distance; lower is better
                 #  https://python.langchain.com/docs/integrations/vectorstores/faiss
-                doc["weighted_score"] = doc["score"] / time_decay(
-                    doc["date"], latest=latest_max
-                )
-            docs.sort(key=lambda doc: doc["weighted_score"])
-            logger.info(
-                f"Weighted and reordered docs to latest with decay = {latest_max}"
-            )
+                doc["score"] = doc["score"] / time_decay(doc["date"], latest=latest)
+            docs.sort(key=lambda doc: doc["score"])
+            logger.info(f"Weighted and reordered docs to latest with decay = {latest}")
+        for doc in docs:
+            doc["score"] = round(doc["score"], 2)
 
-        answer = searcher.query_texts(question, docs)
-    else:
-        answer = "NA"
-
-    results = {
-        "answer": answer,
-        "question": question,
-        "references": docs,
-        "timing": (datetime.now() - now).total_seconds(),
-    }
-    logger.info(f"Received answer: {results['answer']}")
-
-    # Handles storing last answer for feedback purposes
-    global last_answer
-    last_answer = results.copy()
-
-    return results
+    return docs
 
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "secret!"
+socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=True)
 
 
 @app.route("/")
 def home():
     advanced = MultiDict()
     return render_template("statschat.html", advanced=advanced, question="?")
+    # TODO: redesign the statschat template to put results in sockets
 
 
 @app.route("/advanced")
@@ -114,36 +90,98 @@ def advanced():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
-    question = escape(request.args.get("q"))
-    advanced, latest_max = get_latest_flag(request.args, CONFIG["app"]["latest_max"])
-    logger.info(f"Search query: {question}")
-    if question:
-        results = make_query(question, latest_max)
+    session["question"] = escape(request.args.get("q"))
+    advanced, latest = get_latest_flag(request.args, CONFIG["app"]["latest_max"])
+    if session["question"]:
+        logger.info(f"Search query: {session['question']}")
+        docs = make_query(session["question"], latest)
+        logger.info(
+            f"Received {len(docs)} references"
+            + f" with top distance {docs[0]['score'] if docs else 'Inf'}"
+        )
+        session["docs"] = docs[: CONFIG["search"]["k_contexts"]]
         return render_template(
-            "statschat.html", advanced=advanced, question=question, results=results
+            "statschat.html",
+            advanced=advanced,
+            question=session["question"],
+            results={"answer": "Loading...", "references": docs},
         )
     else:
         return render_template("statschat.html", advanced=advanced, question="?")
+
+
+def search_question_async(sid, question, docs):
+    """
+    Generate answer and emit to a socketio instance (broadcast)
+    Ideally to be run in a separate thread?
+    """
+    # TODO: pass the advanced filters to the searcher
+    socketio.emit(
+        "newanswer",
+        {"answer": "Looking for answer in relevant documents..."},
+        namespace="/answer",
+        to=sid,
+    )
+    answer = searcher.query_texts(question, docs)
+    logger.info(f"Received answer: {answer}")
+    if answer in ["NA", "NA.", ""]:
+        answer_str = ""
+    else:
+        answer_str = (
+            'Most likely answer: <h4 class="ons-u-fs-xxl"> <div id="answer">'
+            + answer
+            + "</div> </h4>"
+        )
+    socketio.emit("newanswer", {"answer": answer_str}, namespace="/answer", to=sid)
+
+
+@socketio.on("connect", namespace="/answer")
+def test_connect():
+    # need visibility of the global thread object
+    print("Client connected")
+    sid = request.sid
+    socketio.start_background_task(
+        search_question_async,
+        sid=sid,
+        question=session.get("question"),
+        docs=session.get("docs"),
+    )
+
+
+@socketio.on("disconnect", namespace="/answer")
+def test_disconnect():
+    print("Client disconnected")
 
 
 @app.route("/record_rating", methods=["POST"])
 def record_rating():
     rating = request.form["rating"]
     logger.info(f"Recorded answer rating: {rating}")
-    last_answer["rating"] = rating
-    pd.DataFrame([last_answer]).to_csv(
-        feedback_file, mode="a", index=False, header=False
-    )
+    last_answer = {
+        "rating": rating,
+        "question": session["question"],
+        "answer": searcher.query_texts(
+            session["question"], session["docs"]
+        ),  # session['answer'],  # TODO: store answer in session?
+        "references": session["docs"],
+        "config": CONFIG,
+    }
+    logger.info(f"Received feedback: {last_answer}")
+    # pd.DataFrame([last_answer]).to_csv(
+    #    feedback_file, mode="a", index=False, header=False
+    # )
     return "", 204  # Return empty response with status code 204
 
 
 @app.route("/api/search", methods=["GET", "POST"])
 def api_search():
     question = escape(request.args.get("q"))
-    _, latest_max = get_latest_flag(request.args, CONFIG["app"]["latest_max"])
-    logger.info(f"Search query: {question}")
+    logger.info(f"API Search query: {question}")
     if question:
-        results = make_query(question, latest_max)
+        _, latest = get_latest_flag(request.args, CONFIG["app"]["latest_max"])
+        docs = make_query(question, latest)
+        answer = searcher.query_texts(question, docs)
+        results = {"question": question, "answer": answer, "references": docs}
         logger.info(f"Received {len(results['references'])} documents.")
         return jsonify(results), 200
     else:
@@ -157,4 +195,4 @@ def about():
 
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0")
+    socketio.run(app, debug=False, host="0.0.0.0")

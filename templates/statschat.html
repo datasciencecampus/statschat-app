@@ -40,20 +40,17 @@
     </div>
 
 </section>
+
 <section role="contentinfo" aria-label="Search results">
-    {% if results['answer'] not in ['NA', 'NA.', ''] %}
-        <div class="search__sort">
-            Most likely answer:
-            <h4 class="ons-u-fs-xxl"> {{results['answer']}} </h4>
-        </div>
-        <p class="search__results__summary font-size--16">
-        Answer based on following publication(s):
-        </p>
-    {% else %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+        <script src="static/js/application.js"></script>
+        <div class="search__sort" id="answer_block"> </div>
+    {% if results['references']|length > 0 %}
         <p class="search__results__summary font-size--16">
         Most relevant publication(s):
         </p>
-    {% endif %}
+
     <ul class="flush--padding">
       {% for row in results['references'] %}
         <li class="search__results__item">
@@ -61,7 +58,7 @@
             <p class="search__results__meta font-size--16">
             <b>Released on:</b> {{row['date']}}  &nbsp;  | &nbsp;
             <b>Section: </b> <a href="{{row['section_url']}}"> {{ row['section'] }}</a>  &nbsp;  | &nbsp;
-            <b>Relevance: </b> {{row['score']}}
+            <b>Semantic distance: </b> {{row['score']}}
             </p>
             <p class="search__results__summary font-size--16">
             <b>Context:</b>  {{row['page_content']}}
@@ -73,10 +70,16 @@
                 <img src="{{image['figure_url']}}" alt="{{image['figure_title']}}"  style="height:300px">
                 {% endif %}
             {% endfor %}
-
         </li>
       {% endfor %}
     </ul>
+    {% else %}
+        <p class="search__results__summary font-size--16">
+        No relevant publications found.
+        </p>
+
+    {% endif %}
+
 </section>
 <section class="search__summary" role="contentinfo" aria-label="Search summary">
     <p class="search__results__summary font-size--16"></p>
