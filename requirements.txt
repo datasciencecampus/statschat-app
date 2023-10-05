@@ -6,6 +6,6 @@ ipykernel==6.23.2
 pre-commit==3.3.3
 bs4==0.0.1
 toml==0.10.2
-farm-haystack[faiss]==1.16.1
+farm-haystack[faiss,preprocessing,inference]==1.20.1
 rapidfuzz==3.1.1
 pydantic==1.10.10
