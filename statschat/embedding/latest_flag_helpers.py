@@ -1,7 +1,6 @@
 from datetime import datetime
 from numpy import exp
 import re
-from werkzeug.datastructures import MultiDict
 
 
 def time_decay(date: str = "1900-01-01", latest: int = 1):
@@ -17,14 +16,13 @@ def time_decay(date: str = "1900-01-01", latest: int = 1):
 
 def get_latest_flag(request_args, latest_max: int = 1):
     """parse the request arguments such as the latest priority flag"""
-    if "latest-publication" in request_args:
-        advanced = request_args
-        latest = latest_max * (request_args.get("latest-publication") == "On")
+    if "latest_weight" in request_args:
+        latest = latest_max * (
+            request_args.get("latest_weight") in ["On", "on", "true", "True", True]
+        )
+    elif re.search("(recent)|(latest)", request_args.get("q")):
+        latest = latest_max
     else:
-        advanced = MultiDict()
-        if re.search("(recent)|(latest)", request_args.get("q")):
-            latest = latest_max
-        else:
-            latest = latest_max / 2
+        latest = latest_max / 2
 
-    return advanced, latest
+    return latest

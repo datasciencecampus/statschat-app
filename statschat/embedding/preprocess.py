@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 from datetime import datetime
 from langchain.document_loaders import DirectoryLoader, JSONLoader
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.embeddings import HuggingFaceEmbeddings, VertexAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_transformers import EmbeddingsRedundantFilter
@@ -22,23 +22,25 @@ class PrepareVectorStore(DirectoryLoader, JSONLoader):
     def __init__(
         self,
         directory: Path = "data/bulletins",
-        split_directory: Path = "data/full_bulletins_split",
+        split_directory: Path = "data/full_bulletins_split_latest",
         split_length: int = 1000,
         split_overlap: int = 100,
-        embedding_model: str = "sentence-transformers/all-mpnet-base-v2",
+        embedding_model_name: str = "sentence-transformers/all-mpnet-base-v2",
         redundant_similarity_threshold: float = 0.99,
-        faiss_db_root: str = "db_lc",
+        faiss_db_root: str = "db_langchain",
         db=None,  # vector store
         logger: logging.Logger = None,
+        latest_only: bool = False,
     ):
         self.directory = directory
         self.split_directory = split_directory
         self.split_length = split_length
         self.split_overlap = split_overlap
-        self.embedding_model = embedding_model
+        self.embedding_model_name = embedding_model_name
         self.redundant_similarity_threshold = redundant_similarity_threshold
-        self.faiss_db_root = faiss_db_root
+        self.faiss_db_root = faiss_db_root + ("_latest" if latest_only else "")
         self.db = db
+        self.latest_only = latest_only
 
         # Initialise logger
         if logger is None:
@@ -84,10 +86,10 @@ class PrepareVectorStore(DirectoryLoader, JSONLoader):
         # extract metadata from each article section
         # and store as separate JSON
         for filename in found_articles:
-            if "0000" not in filename:
-                try:
-                    with open(filename) as file:
-                        json_file = json.load(file)
+            try:
+                with open(filename) as file:
+                    json_file = json.load(file)
+                    if (not (self.latest_only)) or json_file["latest"]:
                         id = json_file["id"][:60]
 
                         publication_meta = {
@@ -96,13 +98,15 @@ class PrepareVectorStore(DirectoryLoader, JSONLoader):
                         for num, section in enumerate(json_file["content"]):
                             section_json = {**section, **publication_meta}
 
-                            with open(
-                                f"{self.split_directory}/{id}_{num}.json", "w"
-                            ) as new_file:
-                                json.dump(section_json, new_file)
+                            # Check that there's text extracted for this section
+                            if len(section["section_text"]) > 5:
+                                with open(
+                                    f"{self.split_directory}/{id}_{num}.json", "w"
+                                ) as new_file:
+                                    json.dump(section_json, new_file, indent=4)
 
-                except KeyError:
-                    self.logger.warning(f"Could not parse {filename}")
+            except KeyError as e:
+                self.logger.warning(f"Could not parse {filename}: {e}")
 
         return None
 
@@ -116,15 +120,21 @@ class PrepareVectorStore(DirectoryLoader, JSONLoader):
             Helper, instructs on how to fetch metadata.  Here I take
             everything that isn't the actual text body.
             """
-            metadata["title"] = record["title"]
-            metadata["url"] = record["url"]
+            # Copy everything
+            metadata.update(record)
+
+            # Reformat the date
             metadata["date"] = datetime.strptime(
-                record["release_date"], "%Y-%m-%d"
+                metadata.pop("release_date"), "%Y-%m-%d"
             ).__format__("%d %B %Y")
-            metadata["source"] = record["id"]
-            metadata["section"] = record["section_header"]
-            metadata["section_url"] = record["section_url"]
-            metadata["figures"] = record["figures"]
+
+            # Rename a few things
+            metadata["source"] = metadata.pop("id")
+            metadata["section"] = metadata.pop("section_header")
+
+            # Remove the text from metadata
+            metadata.pop("section_text")
+
             return metadata
 
         # required argument from JSONLoader class
@@ -152,7 +162,13 @@ class PrepareVectorStore(DirectoryLoader, JSONLoader):
         """
         Loads embedding model to memory
         """
-        self.embeddings = HuggingFaceEmbeddings(model_name=self.embedding_model)
+        if self.embedding_model_name == "textembedding-gecko@001":
+            self.embeddings = VertexAIEmbeddings()
+
+        else:
+            self.embeddings = HuggingFaceEmbeddings(
+                model_name=self.embedding_model_name
+            )
 
         return None
 
@@ -213,7 +229,7 @@ if __name__ == "__main__":
         filemode="a",
     )
     # initiate Statschat AI and start the app
-    config = toml.load("app_config.toml")
+    config = toml.load("config/app_config.toml")
 
-    prepper = PrepareVectorStore(**config["setup"], **config["db"])
+    prepper = PrepareVectorStore(**config["db"], **config["preprocess"])
     logger.info("setup of docstore should be complete.")

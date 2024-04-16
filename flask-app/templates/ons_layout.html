@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title> Search - Office for National Statistics </title>
+<meta name="description" content="">
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#58595B">
+<meta name="apple-mobile-web-app-status-bar-style" content="#58595B">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='ons_files/main.css') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='ons_files/favicon.ico') }}">
+
+</head>
+
+<body>
+<header>
+<div class="ons-container">
+<div class="ons-phase-banner">
+<div class="ons-grid ons-grid__col ">
+<span class="default-line-height ons-u-fs-s ">
+    <strong class="ons-phase-banner__badge">EXPERIMENTAL</strong>
+    This is a new semantic search developed by
+    <a href = "https://datasciencecampus.ons.gov.uk">Data Science Campus
+    </a>
+</span>
+</div>
+</div>
+</div>
+<div id="pagePath" class="hide">/search?latest_filter={{latest_filter}}?q=</div>
+<div class="wrapper">
+<div class="header col-wrap">
+<div class="col col--lg-one-third col--md-one-third">
+<a id="logo-link" href="/">
+<img class="logo" src="static/ons_files/ons-logo.svg" alt="Office for National Statistics logo - Homepage">
+</a>
+</div>
+<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+
+<a class="secondary-nav__list  secondary-nav__link "
+href="https://datasciencecampus.ons.gov.uk/using-large-language-models-llms-to-improve-website-search-experience-with-statschat/">
+            About this project</a>
+            </div>
+            <div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+      <a class="secondary-nav__list  secondary-nav__link  "
+      href="https://www.ons.gov.uk/aboutus">About ONS (official live webpage)</a>
+
+</div>
+</div>
+</div>
+<form action="/search">
+    <div class="search print--hide" id="searchBar">
+        <div class="wrapper" role="search">
+        <div class="col-wrap search__form" >
+        <label class="search__label col col--md-23 col--lg-24" for="nav-search">Ask us a question:
+
+        </label>
+        <input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-300" id="nav-search" name="q">
+        <input type="hidden" name="latest_filter" value={{latest_filter}}>
+        <button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+        <span class="visuallyhidden">Search</span>
+        <span class="icon icon-search--light">
+        <svg class="ons-svg-icon ons-svg-icon--m" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor">
+        <path d="M11.86 10.23 8.62 6.99a4.63 4.63 0 1 0-6.34 1.64 4.55 4.55 0 0 0 2.36.64 4.65 4.65 0 0 0 2.33-.65l3.24 3.23a.46.46 0 0
+            0 .65 0l1-1a.48.48 0 0 0 0-.62Zm-5-3.32a3.28 3.28 0 0 1-2.31.93 3.22 3.22 0 1 1 2.35-.93Z"></path>
+        </svg>
+        </span>
+        </button>
+        </div>
+        </div>
+    </div>
+    </form>
+    <div class="primary-nav print--hide">
+        <nav aria-label="Site navigation">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='tabs.js') }}"></script>
+        <ul class="wrapper  primary-nav__list" id="nav-primary" aria-expanded="true">
+        {% if latest_filter == "on" %}
+        <li class="primary-nav__item  js-nav  old-ie--display-block primary-nav__item--active" aria-expanded="true">
+            <a class="primary-nav__link"  id = "link-one">Latest Bulletins</a>
+        </li>
+        <li class="primary-nav__item  js-nav  old-ie--display-block">
+            <a class="primary-nav__link" href="/search?q={{question}}&latest_filter=off"  id = "link-two">All publications</a>
+        </li>
+        {% else %}
+        <li class="primary-nav__item  js-nav  old-ie--display-block" aria-expanded="true">
+            <a class="primary-nav__link" href="/search?q={{question}}&latest_filter=on"  id = "link-one">Latest Bulletins</a>
+        </li>
+        <li class="primary-nav__item  js-nav  old-ie--display-block primary-nav__item--active">
+            <a class="primary-nav__link"  id = "link-two">All publications</a>
+        </li>
+        {% endif %}
+        <li class="primary-nav__item  js-nav  old-ie--display-block">
+            <a class="primary-nav__link"></a>
+        </li>
+        </ul>
+        </nav>
+    </div>
+
+    </header>
+
+
+
+<main id="main" role="main" tabindex="-1">
+<div class="ons-container search__container">
+<div class="ons-grid">
+<div class="ons-grid__col ons-col-12@m">
+<section role="contentinfo" aria-label="Search results">
+<div class="search__results">
+<div id="results">
+
+{% block results %} {% endblock %}
+
+</div>
+</div>
+
+</section>
+</div>
+</div>
+</div>
+</main>
+<footer class="print--hide padding-top--13">
+<section>
+<div class="footer">
+<div class="wrapper">
+<div class="footer-license">
+<svg class="ons-footer__ogl-img" xmlns="http://www.w3.org/2000/svg" width="60px" height="24px" viewBox="0 0 60 24" focusable="false" aria-hidden="true">
+<path d="M51.7,17.5V0l-6.2,4v19.8h13.8v-6.2H51.7z
+            M36.7,16.3c-1,0.9-2.4,1.4-3.8,1.4c-3.2,0-5.8-2.6-5.8-5.8s2.6-5.8,5.8-5.8c2,0,3.9,1.1,4.9,2.7L43,5.6C40.9,2.2,37.1,0,32.9,0c-4.5,0-8.4,2.5-10.4,6.1C20.4,2.5,16.5,0,12,0C5.4,0,0,5.4,0,12s5.4,12,12,12c4.5,0,8.4-2.5,10.4-6.1c2.1,3.6,6,6.1,10.4,6.1c3,0,5.8-1.1,7.9-3l2.4,2.7h0.4V13h-9.8L36.7,16.3zM12,17.8c-3.2,0-5.8-2.6-5.8-5.8S8.8,6.2,12,6.2s5.8,2.6,5.8,5.8S15.2,17.8,12,17.8" fill="currentColor"></path>
+</svg>
+<p class="footer-license__text margin-left-sm--0">
+All content is available under the <a class="ons-external-link" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">Open Government Licence v3.0<span class="ons-external-link__icon"><svg class="ons-svg-icon" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor"><path d="M13.5,9H13a.5.5,0,0,0-.5.5v3h-9v-9h3A.5.5,0,0,0,7,3V2.5A.5.5,0,0,0,6.5,2h-4a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h11a.5.5,0,0,0,.5-.5v-4A.5.5,0,0,0,13.5,9Z" transform="translate(-2 -1.99)"></path><path d="M8.83,7.88a.51.51,0,0,0,.71,0l2.31-2.32,1.28,1.28A.51.51,0,0,0,14,6.49v-4a.52.52,0,0,0-.5-.5h-4A.51.51,0,0,0,9,2.52a.58.58,0,0,0,.14.33l1.28,1.28L8.12,6.46a.51.51,0,0,0,0,.71Z" transform="translate(-2 -1.99)"></path></svg></span></a>&nbsp;, except where otherwise stated
+</p>
+</div>
+</div>
+</div>
+</section>
+</footer>
+
+</div>
+
+</body></html>

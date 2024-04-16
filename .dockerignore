@@ -1,0 +1,18 @@
+# Ignore everything
+*
+
+# Allow files and directories
+!/statschat
+!/log/.gitkeep
+!/notebooks/load_llm_models_docker.py
+!/data/db_langchain
+!/data/db_langchain_latest
+!/pyproject.toml
+!/fast-api
+
+# ignore python temp
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_cache

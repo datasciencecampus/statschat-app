@@ -1,0 +1,88 @@
+{% extends 'ons_layout.html' %}
+
+{% block results %}
+
+{% if results %}
+
+<section class="search__summary" role="contentinfo" aria-label="Search summary" style = "display:inline;">
+    <div class="secondary-nav " style = "display:inline;justify-content:right;">
+        <i class="glyphicon glyphicon-thumbs-up feedback-up" style="font-size:24px;color:grey;" id="thumbs-up-ico"></i>
+        <i class="glyphicon glyphicon-thumbs-down feedback-down" style="font-size:24px;color:grey;" id="thumbs-down-ico"></i>
+        <input type="text"  placeholder="Enter feedback comment." style="display:none;" id="feedback-send-input">
+        <span class="feedback-send" style="display:none;" id="feedback-send-icon"> Send</span>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static',filename='js/rating.js') }}"></script>
+        </div>
+    <div aria-live="polite">
+        Your question:
+    <h4 class="ons-u-fs-xxl">  {{question}} </h4>
+</div>
+</section>
+<section role="contentinfo" aria-label="Search results">
+        <div class="search__sort" id="answer_static">
+            {{results['answer']|safe}}
+        </div>
+    {% if results['references']|length > 0 %}
+        <p class="search__results__summary font-size--16">
+        Most relevant publication(s):
+        </p>
+
+    <ul class="flush--padding">
+      {% for row in results['references'] %}
+        <li class="search__results__item">
+            <h3> <a href="{{ row['url'] }}">{{ row['title'] }}</a> </h3>
+            <p class="search__results__meta font-size--16">
+            <b>Released on:</b> {{row['date']}}  &nbsp;  | &nbsp;
+            <b>Section: </b> <a href="{{row['section_url']}}"> {{ row['section'] }}</a>  &nbsp;  | &nbsp;
+            <b>Semantic distance: </b> {{row['score']}}
+            </p>
+            <p class="search__results__summary font-size--16">
+            <b>Context:</b>  {{row['page_content']|safe }}
+            </p>
+            {% for image in row['figures'] %}
+                {% if image['figure_type']=='interactive' %}
+                <iframe height="300px" width="100%" src="{{image['figure_url']}}"></iframe>
+                {% else %}
+                <img src="{{image['figure_url']}}" alt="{{image['figure_title']}}"  style="height:300px">
+                {% endif %}
+            {% endfor %}
+        </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+        <p class="search__results__summary font-size--16">
+        No relevant publications found.
+        </p>
+
+    {% endif %}
+
+</section>
+
+
+{% else %}
+
+    <p class="search__results__meta font-size--16">
+        <br> This is an experimental app for semantic search of ONS publications.
+        <br> <br>
+        <h3> Please, type your question in the search field.  </h3>
+        Select whether to search only recent bulletins or all publications.
+        <br>
+    </p>
+        <p class="search__results__meta font-size--16">
+        <br> Read more in
+            <a href="https://datasciencecampus.ons.gov.uk/using-large-language-models-llms-to-improve-website-search-experience-with-statschat/">
+                blog post
+            </a> or in
+            <a href = "https://github.com/datasciencecampus/statschat-app">
+                the code repository
+            </a>.
+        <br>    API available <a href = "localhost:8000">here</a>
+        (and <a href="https://github.com/datasciencecampus/statschat-app/blob/main/docs/api/README.md"> docs</a>).
+        <br>
+        <br>
+    </p>
+
+{% endif %}
+
+
+{% endblock %}

@@ -1,10 +1,10 @@
 {
-    "id": "2023-05-19_public-opinions-and-social-trends-great-britain-4-to-14-may-2023",
+    "id": "EXAMPLE-2023-05-19_public-opinions-and-social-trends-great-britain-4-to-14-may-2023",
     "title": "Public opinions and social trends, Great Britain: 4 to 14 May 2023",
     "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/4to14may2023",
     "release_date": "2023-05-19",
     "release_type": "bulletins",
-    "latest": false,
+    "latest": true,
     "url_keywords": [
         "peoplepopulationandcommunity",
         "wellbeing"
