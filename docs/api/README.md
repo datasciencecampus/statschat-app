@@ -19,29 +19,22 @@
         </td>
     </tr>
     <tr class="table--row">
-        <td class="table--cell">GET</td>
-        <td class="table--cell"><a href="bulletins.md">/bulletins</a></td>
+        <td class="table--cell">POST</td>
+        <td class="table--cell">/feedback</td>
         <td class="table--cell">
-            TODO: Search bulletins.
+            Post feedback on search results.
         </td>
     </tr>
     <tr class="table--row">
-        <td class="table--cell">GET</td>
-        <td class="table--cell"><a href="articles.md">/articles</a></td>
-        <td class="table--cell">
-            TODO: Search articles.
-        </td>
-    </tr>
-        <tr class="table--row">
             <td class="table--cell">GET</td>
-            <td class="table--cell"><a href="datasets.md">/datasets</a></td>
+            <td class="table--cell">/datasets</td>
             <td class="table--cell">
-                TODO: Search datsets.
+                TODO: Search datasets.
             </td>
         </tr>
     <tr class="table--row">
         <td class="table--cell">POST</td>
-        <td class="table--cell"><a href="bulk.md">/bulk</a></td>
+        <td class="table--cell">/bulk</td>
         <td class="table--cell">
             TODO: Runs a batch of search terms.
         </td>
@@ -81,7 +74,7 @@
     <tbody>
     <tr class="table--row">
         <td class="table--cell">GET</td>
-        <td class="table--cell">/about</td>
+        <td class="table--cell">/</td>
         <td class="table--cell">
             Get version information.
         </td>

@@ -1,0 +1,63 @@
+[project]
+name = "statschat"
+description = "An app for RAG-based search of ONS statistical publications"
+authors = [{name = "Data Science Campus", email = "datasciencecampus@ons.gov.uk"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dynamic = ["version"]
+dependencies = [
+    "bs4==0.0.1",
+    "faiss-cpu==1.7.4",
+    "google-cloud-aiplatform==1.38.1",
+    "jq==1.4.1",
+    "langchain-community==0.0.13",
+    "langchain-google-vertexai==0.0.1",
+    "langchain-openai==0.0.2",
+    "langchain==0.1.0",
+    "pandas==2.0.2",
+    "pydantic==1.10.10",
+    "rapidfuzz==3.1.1",
+    "sentence_transformers==2.2.2",
+    "toml==0.10.2",
+    "typing==3.7.4.3",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==6.2.5",
+    "pytest-pythonpath==0.7.4",
+]
+backend = [
+    "fastapi==0.110.0",
+    "uvicorn==0.27.1",
+]
+frontend = [
+    "Flask==2.3.2",
+    "gunicorn==21.2.0",
+    "requests==2.31.0",
+]
+dev = [
+    "ipykernel==6.23.2",
+    "pre-commit==3.3.3",
+    "statschat[test]",
+    "statschat[backend]",
+    "statschat[frontend]",
+]
+
+[project.urls]
+homepage = "https://github.com/datasciencecampus/statschat-app"
+
+[build-system]
+requires = ["setuptools>=62"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "statschat.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["statschat"]
+namespaces = false
+
+[tool.setuptools.package-data]
+statschat = ["_config/*.toml"]

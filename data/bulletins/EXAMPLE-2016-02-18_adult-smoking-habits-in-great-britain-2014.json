@@ -1,10 +1,11 @@
 {
-    "id": "2016-02-18_adult-smoking-habits-in-great-britain-2014",
+    "id": "EXAMPLE-2016-02-18_adult-smoking-habits-in-great-britain-2014",
     "title": "Adult smoking habits in Great Britain: 2014",
     "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/bulletins/adultsmokinghabitsingreatbritain/2014",
     "release_date": "2016-02-18",
     "release_type": "bulletins",
-    "latest": false,
+    "latest": true
+    ,
     "url_keywords": [
         "peoplepopulationandcommunity",
         "healthandsocialcare",

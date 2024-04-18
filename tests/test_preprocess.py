@@ -1,6 +1,6 @@
 import shutil
 import json
-from statschat.preprocess import PrepareVectorStore
+from statschat.embedding.preprocess import PrepareVectorStore
 
 
 def test_faiss_docs_load():

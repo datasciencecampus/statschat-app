@@ -1,93 +1,16 @@
-import re
-import toml
 import json
 import numpy as np
 from time import time
 from datetime import datetime
 from pandas import DataFrame, Series
-from statschat.llm import Inquirer
-from statschat.utils import deduplicator
 from rapidfuzz import fuzz
+from typing import Optional
+
+from statschat import load_config
+from statschat.generative.llm import Inquirer
 
 
-# TODO: This template doesn't really match
-template = {
-    "questions": "how many people watched the kings coronation",
-    "should_answer": True,
-    "answer_provided": True,
-    "test_answer_provided": "Pass",
-    "expected_answer": "around 1 in 6 (59%)",
-    "answer": "Around 1 in 6 people watched the kings coronation",
-    "fuzzy_partial_token_ratio": 100,
-    "test_correct_answer": "Pass",  # TODO
-    "should_provide_relevant": True,
-    "section_url": "http:/www.ons.gov.uk/{publication link}",
-    "page_content": "...[some text]...",
-    "expected_keywords": ["watched", "coronation", "king", "queen"],
-    "expected_url": "some_url_to_main_bulletin",
-    "all_urls": ["top_url", "next_url", "etc"],
-    "test_article_relevant": "Pass",  # TODO
-    "seconds_to_run": 6.53,
-    "retriever": "haystack.nodes.retriever.sparse.BM25Retriever",
-    "reader": "haystack.nodes.reader.farm.FARMReader",
-    "reader_model": "deepset/bert-large-uncased-whole-word-masking-squad2",
-    "answer_model": "google/flan-t5-large",
-    "confidence_threshold": 0.03,
-}
-
-
-def _get_one_first_response(question: str, searcher) -> dict:
-    """get the first response from a question
-    Parameters
-    ----------
-    question:str
-        a question to pass to the query
-    searcher
-        a searcher class object
-    k_docs: int
-        number of documents for the retriver to return for the reader
-    k_answer: int
-        number of answers the reader provides the summarizer
-    Returns
-    -------
-    dict
-        dictionary of response objects (answer, confidence, references)
-    """
-    # start_time = time()
-    # response = searcher(question)
-    # run_time_seconds = round(time() - start_time, 2)
-    # first_response = response[0]
-    # first_response["seconds_to_run"] = run_time_seconds
-    start_time = time()
-    first_response = searcher(question)
-    run_time_seconds = round(time() - start_time, 2)
-    first_response["seconds_to_run"] = run_time_seconds
-    return first_response
-
-
-def _get_first_responses(questions: list, searcher):
-    """get first responses from each question
-    Parameters
-    ----------
-    questions:list
-        a list of questions to get responses from
-    searcher
-        the searcher class object
-    k_docs: int
-        number of documents for the retriver to return for the reader
-    k_answer: int
-        number of answers the reader provides the summarizer
-    Returns
-    -------
-    list
-        a list of the first response objects"""
-    first_responses = [
-        _get_one_first_response(question, searcher) for question in questions
-    ]
-    return first_responses
-
-
-def get_test_responses(questions: list, searcher) -> list:
+def get_test_responses(questions: list, make_query) -> list:
     """retrieve the first query responses for all questions
     Parameters
     ---------
@@ -104,14 +27,21 @@ def get_test_responses(questions: list, searcher) -> list:
     list
         list of dictionaries containing responses from each test
     """
-    first_responses = _get_first_responses(questions, searcher)
-    test_responses = [
-        _get_response_components(response) for response in first_responses
-    ]
+    test_responses = []
+    for q in questions:
+        start_time = time()
+        docs, _, response = make_query(q)
+        run_time_seconds = round(time() - start_time, 2)
+        test_responses.append(
+            _get_response_components(docs, response.__dict__, run_time_seconds)
+        )
+
     return test_responses
 
 
-def _get_response_components(response: dict) -> dict:
+def _get_response_components(
+    docs: list, response: dict, run_time_seconds: float
+) -> dict:
     """extract important response components for testing
     Parameters
     ----------
@@ -124,11 +54,12 @@ def _get_response_components(response: dict) -> dict:
         section_url, answer_provided)
     """
     response_components = {
-        "answer": response["answer"],
-        "section_url": response["references"][0]["section_url"],
-        "all_urls": [x["section_url"] for x in response["references"]],
-        "page_content": response["references"][0]["page_content"],
-        "seconds_to_run": response["seconds_to_run"],
+        "answer_provided": response["answer_provided"],
+        "answer": response["most_likely_answer"],
+        "section_url": docs[0]["section_url"] if docs else "",
+        "all_urls": [x["section_url"] for x in docs],
+        "page_content": docs[0]["page_content"] if docs else "",
+        "seconds_to_run": run_time_seconds,
     }
     return response_components
 
@@ -150,13 +81,10 @@ def test_answer_provided(
         were supposed to be answered met that criteria
     """
     question_info = _add_question_info(meta_test_responses, question_config)
-    question_info["answer_provided"] = question_info["answer"].apply(
-        _check_answer_provided
-    )
     question_info["test_answer_provided"] = _test_series_value_match(
         question_info["should_answer"], question_info["answer_provided"]
     )
-    question_info["fuzzy_partial_ratio"] = _partial_token_set_ratio_rowwise(
+    question_info["fuzzy_partial_ratio"] = _partial_ratio_rowwise(
         question_info, "expected_answer", "answer"
     )
     return question_info
@@ -206,24 +134,6 @@ def _get_nested_dict_element(dict_key: str, dictionary: dict) -> list:
     return nested_dict_element
 
 
-def _check_answer_provided(answer: str) -> bool:
-    """check answer for fail response string
-    Parameters
-    ----------
-    answer: str
-        answer string from the query response
-
-    Returns
-    -------
-    bool
-        True if answer is not the string for failed answer"""
-    if bool(re.match("NA", answer)):
-        answer_provided = False
-    else:
-        answer_provided = True
-    return answer_provided
-
-
 def _test_series_value_match(reference: Series, comparison: Series) -> Series:
     """rowwise comparison of two series to check if they have the same values
     in a given row
@@ -242,7 +152,7 @@ def _test_series_value_match(reference: Series, comparison: Series) -> Series:
     return new_series
 
 
-def _partial_token_set_ratio_rowwise(
+def _partial_ratio_rowwise(
     dataframe: DataFrame, column_1: str, column_2: str
 ) -> Series:
     """map the partial token set ratio function across two columns of a dataframe
@@ -259,9 +169,7 @@ def _partial_token_set_ratio_rowwise(
     Series
         series of partial ratio scores
     """
-    ratio = Series(
-        map(fuzz.partial_token_set_ratio, dataframe[column_1], dataframe[column_2])
-    )
+    ratio = Series(map(fuzz.partial_ratio, dataframe[column_1], dataframe[column_2]))
     return ratio
 
 
@@ -339,11 +247,13 @@ def test_search_result(df):
     return df
 
 
-def pipeline(app_config_file: str = "app_config.toml", n_questions: int = None):
+def pipeline(
+    app_config_file: Optional[str] = None,
+    question_config_file: Optional[str] = None,
+    n_questions: int = None,
+):
     """main pipeline function for the evaluator"""
-    question_config = toml.load(
-        "statschat/model_evaluation/question_configuration.toml"
-    )
+    question_config = load_config(question_config_file, name="questions")
 
     # Optionally only run N questions (useful for quick test/eval)
     if n_questions:
@@ -352,23 +262,12 @@ def pipeline(app_config_file: str = "app_config.toml", n_questions: int = None):
         }
 
     # Create app components
-    app_config = toml.load(app_config_file)
+    app_config = load_config(app_config_file, name="main")
     searcher = Inquirer(**app_config["db"], **app_config["search"])
 
-    def make_query(question: str) -> dict:
-        """Utility, wrap all search functionality into one."""
-        docs = searcher.similarity_search(question)
-        answer = searcher.query_texts(question, docs)
-        print(question)
-        print(len(docs))
-        print(answer)
-        results = {
-            "answer": answer,
-            "references": deduplicator(docs, keys=["section_url", "title"]),
-        }
-        return results
-
-    test_responses = get_test_responses(question_config.keys(), searcher=make_query)
+    test_responses = get_test_responses(
+        question_config.keys(), make_query=searcher.make_query
+    )
     test_response_df = DataFrame(test_responses)
     print(test_response_df.head())
     question_info = test_answer_provided(test_response_df, question_config)
@@ -404,20 +303,31 @@ def pipeline(app_config_file: str = "app_config.toml", n_questions: int = None):
         "app_config",
     ]
     stamp = datetime.now()
+
+    # Save the detailed responses
     question_info[col_order].to_csv(
         f"data/test_outcomes/{format(stamp, '%Y-%m-%d_%H:%M')}_questions.csv",
         index=False,
     )
-    # TODO: Should we just copy and rename the TOML rather than change format?
+
+    # Save the model config that yielded the responses
+    app_config["prompt"] = searcher.extractive_prompt.to_json()
     with open(
         f"data/test_outcomes/{format(stamp, '%Y-%m-%d_%H:%M')}_config.json", "w"
     ) as f:
         json.dump(app_config, f, indent=4)
+
+    # Save the average (mean) performance metrics
+    with open(
+        f"data/test_outcomes/{format(stamp, '%Y-%m-%d_%H:%M')}_metrics.json", "w"
+    ) as f:
+        json.dump(metrics, f, indent=4)
+
     return metrics
 
 
 if __name__ == "__main__":
-    pipeline(app_config_file="app_config.toml")
+    pipeline()
 
 
 # TODO consider alternative tests for answer correctness

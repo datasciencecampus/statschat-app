@@ -26,22 +26,21 @@
              </td>
         </tr>
         <tr class="table--row">
-            <td class="table--cell">latest</td>
+            <td class="table--cell">content-type</td>
             <td class="table--cell">string</td>
-            <td class="table--cell">TODO: Weight to prioritise latest publication. (0 = No prioritisation)</td>
+            <td class="table--cell">Options: latest, all. </td>
             <td class="table--cell">
                 Optional
-                <br>Default: NA
+                <br>Default: latest
             </td>
         </tr>
          <tr class="table--row">
-            <td class="table--cell">limit</td>
-            <td class="table--cell">string</td>
-            <td class="table--cell">TODO: Specifies the number of references to return.</td>
+            <td class="table--cell">debug</td>
+            <td class="table--cell">boolean</td>
+            <td class="table--cell">Whether to include debug information.</td>
             <td class="table--cell">
                 Optional
-                <br>Default: 10
-                <br>Maximum: 100
+                <br>Default: true
             </td>
         </tr>
      </tbody>

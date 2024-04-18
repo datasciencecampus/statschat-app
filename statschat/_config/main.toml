@@ -1,0 +1,20 @@
+[db]
+faiss_db_root = "data/db_langchain"
+embedding_model_name = "sentence-transformers/all-mpnet-base-v2"  # "textembedding-gecko@001" "sentence-transformers/paraphrase-MiniLM-L3-v2"
+
+[preprocess]
+directory = "data/bulletins"
+split_directory = "data/bulletins_split"
+split_length = 1000
+split_overlap = 50
+latest_only = true
+
+[search]
+generative_model_name = "gemini-1.0-pro"   # "text-unicorn" "text-bison@001" "google/flan-t5-large" "lmsys/fastchat-t5-3b-v1.0" "google/flan-t5-large" "google/flan-ul2"
+k_docs = 10
+k_contexts = 3
+similarity_threshold = 2.0     # Threshold score below which a document is returned in a search
+llm_temperature = 0.0
+
+[app]
+latest_max = 2    # Takes value int >= 0, commonly 0, 1 or 2
